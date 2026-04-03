@@ -733,6 +733,28 @@ body {
   overflow: hidden;
 }
 
+.footer-video-frame {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+.footer-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 56.25vw;
+  min-width: 177.77vh;
+  min-height: 100vh;
+  max-width: none;
+  border: 0;
+  transform: translate(-50%, -50%);
+}
+
 .footer::before {
   content: '';
   position: absolute;
@@ -740,6 +762,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 1;
   background-image:
     repeating-linear-gradient(
       0deg,

@@ -140,6 +140,7 @@
     }
   },
   "footer": {
+    "videoTitle": "Footer section background video",
     "products": "OUR PRODUCTS",
     "contact": "CONTACT",
     "location": "LOCATION",

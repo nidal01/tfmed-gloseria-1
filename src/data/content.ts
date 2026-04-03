@@ -6,6 +6,9 @@ export const heroVideoEmbedSrc =
 export const workshopVideoEmbedSrc =
   'https://www.youtube.com/embed/GcCYhUa_kGk?autoplay=1&mute=1&loop=1&playlist=GcCYhUa_kGk&controls=0&showinfo=0&playsinline=1&rel=0' as const
 
+export const footerVideoEmbedSrc =
+  'https://www.youtube.com/embed/oZgQ2eGaIH4?autoplay=1&mute=1&loop=1&playlist=oZgQ2eGaIH4&controls=0&showinfo=0&playsinline=1&rel=0' as const
+
 export const megaMenuFeaturedImage = '/mega-menu-featured.png'
 
 export const categoryCards = [
