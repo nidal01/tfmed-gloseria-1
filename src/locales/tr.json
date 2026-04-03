@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "title": "Profesyonel Medikal Estetik Ürünleri"
+  },
+  "brand": {
+    "wordmark": "GLOSERIA"
+  },
+  "nav": {
+    "aria": "Ana menü",
+    "home": "ANA SAYFA",
+    "corporate": "KURUMSAL",
+    "products": "ÜRÜNLER +",
+    "representatives": "TEMSİLCİLİKLER",
+    "contact": "İLETİŞİM"
+  },
+  "lang": {
+    "switch": "Dil seçin",
+    "tr": "Türkçe",
+    "en": "English",
+    "currentTr": "🇹🇷 TR",
+    "currentEn": "🇬🇧 EN"
+  },
+  "megaMenu": {
+    "aria": "Ürün kategorileri",
+    "columns": [
+      {
+        "title": "CİLT SERİSİ",
+        "links": [
+          { "href": "#urun-blue-shine", "label": "Blue Shine" },
+          { "href": "#urun-anti-aging-effect", "label": "Anti Aging Effect" },
+          { "href": "#urun-anti-hair-loss", "label": "Anti Hair Loss" },
+          { "href": "#urun-eye-shimmer", "label": "Eye Shimmer" },
+          { "href": "#urun-whitening-effect", "label": "Whitening Effect" },
+          { "href": "#urun-pure-dna", "label": "Pure Dna" }
+        ]
+      },
+      {
+        "title": "VOLUREGEN SERİSİ",
+        "links": [
+          { "href": "#urun-hydrocalcium", "label": "Hydrocalcium" },
+          { "href": "#urun-bio-stimulator", "label": "Bio Stimulator" }
+        ]
+      },
+      {
+        "title": "GENİTAL SERİSİ",
+        "links": [
+          { "href": "#urun-g-white", "label": "G White" },
+          { "href": "#urun-h-pause", "label": "H Pause" },
+          { "href": "#urun-rejuvenation", "label": "Rejuvenation" }
+        ]
+      },
+      {
+        "title": "SHAPE SERİSİ",
+        "links": [
+          { "href": "#urun-liposhape-body", "label": "Liposhape Body" },
+          { "href": "#urun-liposhape-face", "label": "Liposhape Face" }
+        ]
+      }
+    ],
+    "featured": {
+      "href": "#urun-ultimate-5",
+      "imageAlt": "Ultimate 5 ürün kutusu",
+      "label": "Gloseria Ultimate 5 →"
+    }
+  },
+  "hero": {
+    "imageAlt": "Hero arka plan",
+    "subtitle": "YENİ NESİL",
+    "titleLine1": "YENİLENME",
+    "titleLine2": "PROTOKOLLERİ"
+  },
+  "categories": {
+    "cta": "Ürünleri Görüntüle +",
+    "skin": {
+      "name": "CİLT SERİSİ",
+      "alt": "Cilt Serisi"
+    },
+    "volumegen": {
+      "name": "VOLUMEGEN SERİSİ",
+      "alt": "Voluregen Serisi"
+    },
+    "genital": {
+      "name": "GENİTAL SERİSİ",
+      "alt": "Genital Serisi"
+    }
+  },
+  "professional": {
+    "titleLine1": "Profesyoneller İçin",
+    "titleLine2": "Geliştirildi",
+    "description": "Gloseria, cildin biyolojik ihtiyaçlarına göre geliştirilmiş ileri teknoloji aktif bileşenler sunar. Her ürün, klinik uygulamalara entegre edilebilecek profesyonel protokollerle tasarlanmıştır."
+  },
+  "about": {
+    "headline": "Gloseria, dermatologların ve medikal estetik hekimlerinin ihtiyaçları için geliştirilmiş profesyonel ürünler sunar."
+  },
+  "features": {
+    "aria": "Özellikler",
+    "items": [
+      {
+        "number": "01",
+        "title": "Moleküler Hassasiyet",
+        "description": "Ürünlerimiz, aktif bileşenlerin hedef dokuya en yüksek stabiliteyle ulaşmasını sağlayan ileri biyoteknolojik süreçlerle geliştirilir. Her bir flakon, klinik sonuçları optimize eden konsantre bir mühendislik eseridir."
+      },
+      {
+        "number": "02",
+        "title": "Sinerjik Protokoller",
+        "description": "Gloseria ürünleri sadece tekil çözümler değil, birbiriyle kombine edilebilen akıllı sistemlerdir. Lek tedavisinden biyo-stimülasyona kadar, klinik protokollerinize entegre olabilecek esnek bir uygulama yelpazesi sunar."
+      },
+      {
+        "number": "03",
+        "title": "Biyouyumlu ve Güvenli",
+        "description": "Dermatologların en hassas kriteri olan güvenliği önceliğimiz yapıyoruz. Gloseria serisi, cilt dokusuyla tam uyumlu, inflamasyon riskini minimize eden ve sterilizasyon standartları en üst düzeyde tutulmuş profesyonel içeriklerden oluşur."
+      },
+      {
+        "number": "04",
+        "title": "Kanıta Dayalı Estetik",
+        "description": "Pazarlama vaatlerine değil, klinik verilerine inanıyoruz. Gloseria; medikal estetik alanındaki en güncel literatürleri takip ederek, hekimlerin beklentilerini karşılayan \"öngörülebilir\" sonuçlar sağlar."
+      }
+    ]
+  },
+  "workshop": {
+    "title": "Workshop",
+    "intro": "Gloseria, farklı şehirlerde dermatologlar ve medikal estetik hekimlerine özel, uygulamalı ve sınırlı katılımlı workshop'lar düzenler.",
+    "paragraph1": "Bu seçkin buluşmalarda; ileri formülasyonların bilimsel altyapısı, klinik protokoller ve yüksek başarı sağlayan uygulama teknikleri birebir aktarılır. Canlı uygulamalar ve vaka paylaşımlarıyla teorik bilgi, üst düzey klinik deneyime dönüşür.",
+    "paragraph2": "Gloseria workshop'ları, profesyonellerin bilgi birikimini derinleştirmek ve klinik standartlarını bir üst seviyeye taşımak üzere tasarlanmıştır.",
+    "cta": "WORKSHOP'LARI KEŞFET →"
+  },
+  "events": {
+    "title": "Gelişmeler",
+    "national": {
+      "title": "8. Ulusal Medikal Estetik Kongresi",
+      "imageAlt": "8. Ulusal Medikal Estetik Kongresi",
+      "description": "Gloseria, medikal estetik alanının en prestijli organizasyonlarından biri olan 8. Ulusal Medikal Estetik Kongresi'nde yer alarak yenilikçi ürün portföyünü ve bilimsel yaklaşımını sektör profesyonelleriyle buluşturdu."
+    },
+    "international": {
+      "title": "8. Uluslararası Medikal Estetik Kongresi",
+      "imageAlt": "8. Uluslararası Medikal Estetik Kongresi",
+      "description": "Gloseria, medikal estetik alanının en prestijli organizasyonlarından biri olan 8. Uluslararası Medikal Estetik Kongresi'nde yer alarak yenilikçi ürün portföyünü ve bilimsel yaklaşımını sektör profesyonelleriyle buluşturdu."
+    }
+  },
+  "footer": {
+    "products": "ÜRÜNLERİMİZ",
+    "contact": "İLETİŞİM BİLGİLERİ",
+    "location": "KONUM",
+    "mapPlaceholder": "Harita Gösterimi"
+  }
+}

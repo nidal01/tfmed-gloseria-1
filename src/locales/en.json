@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "title": "Professional Medical Aesthetic Products"
+  },
+  "brand": {
+    "wordmark": "GLOSERIA"
+  },
+  "nav": {
+    "aria": "Main menu",
+    "home": "HOME",
+    "corporate": "CORPORATE",
+    "products": "PRODUCTS +",
+    "representatives": "REPRESENTATIVES",
+    "contact": "CONTACT"
+  },
+  "lang": {
+    "switch": "Choose language",
+    "tr": "Türkçe",
+    "en": "English",
+    "currentTr": "🇹🇷 TR",
+    "currentEn": "🇬🇧 EN"
+  },
+  "megaMenu": {
+    "aria": "Product categories",
+    "columns": [
+      {
+        "title": "SKIN SERIES",
+        "links": [
+          { "href": "#urun-blue-shine", "label": "Blue Shine" },
+          { "href": "#urun-anti-aging-effect", "label": "Anti Aging Effect" },
+          { "href": "#urun-anti-hair-loss", "label": "Anti Hair Loss" },
+          { "href": "#urun-eye-shimmer", "label": "Eye Shimmer" },
+          { "href": "#urun-whitening-effect", "label": "Whitening Effect" },
+          { "href": "#urun-pure-dna", "label": "Pure Dna" }
+        ]
+      },
+      {
+        "title": "VOLUREGEN SERIES",
+        "links": [
+          { "href": "#urun-hydrocalcium", "label": "Hydrocalcium" },
+          { "href": "#urun-bio-stimulator", "label": "Bio Stimulator" }
+        ]
+      },
+      {
+        "title": "GENITAL SERIES",
+        "links": [
+          { "href": "#urun-g-white", "label": "G White" },
+          { "href": "#urun-h-pause", "label": "H Pause" },
+          { "href": "#urun-rejuvenation", "label": "Rejuvenation" }
+        ]
+      },
+      {
+        "title": "SHAPE SERIES",
+        "links": [
+          { "href": "#urun-liposhape-body", "label": "Liposhape Body" },
+          { "href": "#urun-liposhape-face", "label": "Liposhape Face" }
+        ]
+      }
+    ],
+    "featured": {
+      "href": "#urun-ultimate-5",
+      "imageAlt": "Ultimate 5 product box",
+      "label": "Gloseria Ultimate 5 →"
+    }
+  },
+  "hero": {
+    "imageAlt": "Hero background",
+    "subtitle": "NEXT GENERATION",
+    "titleLine1": "RENEWAL",
+    "titleLine2": "PROTOCOLS"
+  },
+  "categories": {
+    "cta": "View products +",
+    "skin": {
+      "name": "SKIN SERIES",
+      "alt": "Skin series"
+    },
+    "volumegen": {
+      "name": "VOLUMEGEN SERIES",
+      "alt": "Voluregen series"
+    },
+    "genital": {
+      "name": "GENITAL SERIES",
+      "alt": "Genital series"
+    }
+  },
+  "professional": {
+    "titleLine1": "Developed for",
+    "titleLine2": "Professionals",
+    "description": "Gloseria offers advanced technological active ingredients developed according to the skin’s biological needs. Each product is designed with professional protocols that integrate into clinical practice."
+  },
+  "about": {
+    "headline": "Gloseria provides professional products developed for the needs of dermatologists and medical aesthetic physicians."
+  },
+  "features": {
+    "aria": "Highlights",
+    "items": [
+      {
+        "number": "01",
+        "title": "Molecular Precision",
+        "description": "Our products are developed through advanced biotechnological processes that deliver active ingredients to target tissue with maximum stability. Each vial is a concentrated engineering work that optimizes clinical outcomes."
+      },
+      {
+        "number": "02",
+        "title": "Synergistic Protocols",
+        "description": "Gloseria products are not isolated solutions but intelligent systems that can be combined. From pigmentation care to bio-stimulation, they offer a flexible range of applications that fit your clinical protocols."
+      },
+      {
+        "number": "03",
+        "title": "Biocompatible and Safe",
+        "description": "We prioritize safety—the most sensitive criterion for dermatologists. The Gloseria line consists of professional formulations fully compatible with skin tissue, minimizing inflammation risk and meeting the highest sterilization standards."
+      },
+      {
+        "number": "04",
+        "title": "Evidence-Based Aesthetics",
+        "description": "We trust clinical data, not marketing claims. Gloseria follows the latest literature in medical aesthetics to deliver predictable outcomes that meet physicians’ expectations."
+      }
+    ]
+  },
+  "workshop": {
+    "title": "Workshop",
+    "intro": "Gloseria hosts hands-on, small-group workshops in multiple cities, exclusively for dermatologists and medical aesthetic physicians.",
+    "paragraph1": "At these sessions, the scientific foundations of advanced formulations, clinical protocols, and high-performance techniques are taught directly. Live demonstrations and case discussions turn theory into top-tier clinical experience.",
+    "paragraph2": "Gloseria workshops are designed to deepen professionals’ expertise and elevate clinical standards to the next level.",
+    "cta": "EXPLORE WORKSHOPS →"
+  },
+  "events": {
+    "title": "News & Events",
+    "national": {
+      "title": "8th National Medical Aesthetic Congress",
+      "imageAlt": "8th National Medical Aesthetic Congress",
+      "description": "Gloseria joined one of the field’s most prestigious events, the 8th National Medical Aesthetic Congress, presenting its innovative portfolio and scientific approach to industry professionals."
+    },
+    "international": {
+      "title": "8th International Medical Aesthetic Congress",
+      "imageAlt": "8th International Medical Aesthetic Congress",
+      "description": "Gloseria participated in the 8th International Medical Aesthetic Congress—among the most prestigious gatherings in medical aesthetics—sharing its innovative product range and scientific vision with professionals."
+    }
+  },
+  "footer": {
+    "products": "OUR PRODUCTS",
+    "contact": "CONTACT",
+    "location": "LOCATION",
+    "mapPlaceholder": "Map preview"
+  }
+}

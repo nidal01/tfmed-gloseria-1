@@ -1,20 +1,27 @@
-import { productsMegaMenu } from '../data/content'
+import { useTranslation } from 'react-i18next'
+import { megaMenuFeaturedImage } from '../data/content'
+
+type MegaLink = { href: string; label: string }
+type MegaColumn = { title: string; links: MegaLink[] }
+type MegaFeatured = { href: string; imageAlt: string; label: string }
 
 export function ProductsMegaMenu() {
-  const { columns, featured } = productsMegaMenu
+  const { t } = useTranslation()
+  const columns = t('megaMenu.columns', { returnObjects: true }) as MegaColumn[]
+  const featured = t('megaMenu.featured', { returnObjects: true }) as MegaFeatured
 
   return (
-    <div className="mega-menu" role="region" aria-label="Ürün kategorileri">
+    <div className="mega-menu" role="region" aria-label={t('megaMenu.aria')}>
       <div className="mega-menu__panel">
         <div className="mega-menu__grid">
-          {columns.map((col) => (
-            <div key={col.id} className="mega-menu__column">
+          {columns.map((col, index) => (
+            <div key={col.title + index} className="mega-menu__column">
               <p className="mega-menu__column-title">{col.title}</p>
               <ul className="mega-menu__list">
-                {col.items.map((item) => (
-                  <li key={item.href}>
-                    <a href={item.href} className="mega-menu__link">
-                      {item.label}
+                {col.links.map((link) => (
+                  <li key={link.href}>
+                    <a href={link.href} className="mega-menu__link">
+                      {link.label}
                     </a>
                   </li>
                 ))}
@@ -25,7 +32,7 @@ export function ProductsMegaMenu() {
             <a href={featured.href} className="mega-menu__featured">
               <div className="mega-menu__featured-image-wrap">
                 <img
-                  src={featured.image}
+                  src={megaMenuFeaturedImage}
                   alt={featured.imageAlt}
                   className="mega-menu__featured-img"
                   width={200}

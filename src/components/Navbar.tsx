@@ -1,28 +1,32 @@
-import { langSelectorLabel, navLinks, WORDMARK } from '../data/content'
+import { useTranslation } from 'react-i18next'
+import { navRoutes } from '../data/content'
+import { LanguageSwitcher } from './LanguageSwitcher'
 import { ProductsMegaMenu } from './ProductsMegaMenu'
 
 export function Navbar() {
+  const { t } = useTranslation()
+
   return (
     <header className="site-header">
       <div className="site-header__inner">
         <a href="#home" className="logo">
-          {WORDMARK}
+          {t('brand.wordmark')}
         </a>
 
-        <nav className="site-nav" aria-label="Ana menü">
+        <nav className="site-nav" aria-label={t('nav.aria')}>
           <ul className="nav-menu">
-            {navLinks.map((link) =>
-              link.href === '#products' ? (
-                <li key={link.href} className="nav-item nav-item--mega">
-                  <a href={link.href} className="nav-link nav-link--mega-trigger">
-                    {link.label}
+            {navRoutes.map((item) =>
+              item.href === '#products' ? (
+                <li key={item.href} className="nav-item nav-item--mega">
+                  <a href={item.href} className="nav-link nav-link--mega-trigger">
+                    {t(item.labelKey)}
                   </a>
                   <ProductsMegaMenu />
                 </li>
               ) : (
-                <li key={link.href} className="nav-item">
-                  <a href={link.href} className="nav-link">
-                    {link.label}
+                <li key={item.href} className="nav-item">
+                  <a href={item.href} className="nav-link">
+                    {t(item.labelKey)}
                   </a>
                 </li>
               ),
@@ -30,9 +34,7 @@ export function Navbar() {
           </ul>
         </nav>
 
-        <button type="button" className="lang-selector" aria-label="Dil seç">
-          {langSelectorLabel}
-        </button>
+        <LanguageSwitcher />
       </div>
     </header>
   )

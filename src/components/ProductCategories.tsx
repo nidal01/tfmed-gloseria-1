@@ -1,20 +1,25 @@
-import {
-  categoryCards,
-  categoryCta,
-  professionalBlock,
-} from '../data/content'
+import { useTranslation } from 'react-i18next'
+import { categoryCards } from '../data/content'
 
 export function ProductCategories() {
+  const { t } = useTranslation()
+
   return (
     <section className="product-categories" id="products">
       <div className="section-container">
         <div className="categories-grid">
           {categoryCards.map((card) => (
             <article key={card.id} className="category-card">
-              <img src={card.image} alt={card.alt} loading="lazy" />
+              <img
+                src={card.image}
+                alt={t(`categories.${card.id}.alt`)}
+                loading="lazy"
+              />
               <div className="category-overlay">
-                <h3 className="category-name">{card.name}</h3>
-                <span className="category-link">{categoryCta}</span>
+                <h3 className="category-name">
+                  {t(`categories.${card.id}.name`)}
+                </h3>
+                <span className="category-link">{t('categories.cta')}</span>
               </div>
             </article>
           ))}
@@ -22,11 +27,11 @@ export function ProductCategories() {
 
         <div className="professional-text">
           <h2 className="professional-title">
-            {professionalBlock.titleLine1}
+            {t('professional.titleLine1')}
             <br />
-            {professionalBlock.titleLine2}
+            {t('professional.titleLine2')}
           </h2>
-          <p className="professional-desc">{professionalBlock.description}</p>
+          <p className="professional-desc">{t('professional.description')}</p>
         </div>
       </div>
     </section>
