@@ -65,6 +65,7 @@
   },
   "hero": {
     "imageAlt": "Hero background",
+    "videoTitle": "Hero section background video",
     "subtitle": "NEXT GENERATION",
     "titleLine1": "RENEWAL",
     "titleLine2": "PROTOCOLS"
@@ -119,6 +120,7 @@
   },
   "workshop": {
     "title": "Workshop",
+    "videoTitle": "Workshop section background video",
     "intro": "Gloseria hosts hands-on, small-group workshops in multiple cities, exclusively for dermatologists and medical aesthetic physicians.",
     "paragraph1": "At these sessions, the scientific foundations of advanced formulations, clinical protocols, and high-performance techniques are taught directly. Live demonstrations and case discussions turn theory into top-tier clinical experience.",
     "paragraph2": "Gloseria workshops are designed to deepen professionals’ expertise and elevate clinical standards to the next level.",

@@ -65,6 +65,7 @@
   },
   "hero": {
     "imageAlt": "Hero arka plan",
+    "videoTitle": "Hero bölümü arka plan videosu",
     "subtitle": "YENİ NESİL",
     "titleLine1": "YENİLENME",
     "titleLine2": "PROTOKOLLERİ"
@@ -119,6 +120,7 @@
   },
   "workshop": {
     "title": "Workshop",
+    "videoTitle": "Workshop bölümü arka plan videosu",
     "intro": "Gloseria, farklı şehirlerde dermatologlar ve medikal estetik hekimlerine özel, uygulamalı ve sınırlı katılımlı workshop'lar düzenler.",
     "paragraph1": "Bu seçkin buluşmalarda; ileri formülasyonların bilimsel altyapısı, klinik protokoller ve yüksek başarı sağlayan uygulama teknikleri birebir aktarılır. Canlı uygulamalar ve vaka paylaşımlarıyla teorik bilgi, üst düzey klinik deneyime dönüşür.",
     "paragraph2": "Gloseria workshop'ları, profesyonellerin bilgi birikimini derinleştirmek ve klinik standartlarını bir üst seviyeye taşımak üzere tasarlanmıştır.",

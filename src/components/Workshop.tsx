@@ -1,17 +1,21 @@
 import { useTranslation } from 'react-i18next'
-import { images, workshopCtaHref } from '../data/content'
+import { workshopCtaHref, workshopVideoEmbedSrc } from '../data/content'
 
 export function Workshop() {
   const { t } = useTranslation()
 
   return (
     <section className="workshop-section" aria-labelledby="workshop-heading">
-      <img
-        src={images.workshopBg}
-        alt=""
-        className="workshop-bg-image"
-        decoding="async"
-      />
+      <div className="workshop-video-frame">
+        <iframe
+          className="workshop-video"
+          src={workshopVideoEmbedSrc}
+          title={t('workshop.videoTitle')}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+          referrerPolicy="strict-origin-when-cross-origin"
+        />
+      </div>
       <div className="workshop-container">
         <h2 id="workshop-heading" className="workshop-title">
           {t('workshop.title')}

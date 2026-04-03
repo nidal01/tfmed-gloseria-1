@@ -1,11 +1,10 @@
 /** Medya URL’leri ve yapısal veri; kullanıcıya dönük metinler `src/locales/*.json` içinde. */
 
-export const images = {
-  hero:
-    'https://z-cdn-media.chatglm.cn/files/420a8b69-f6be-4555-9dff-c7f1b5c9a9b6.png?auth_key=1875246085-924d165a75374ded87f44d5f8c136af0-0-ce433765219f8147e26876a56f286139',
-  workshopBg:
-    'https://z-cdn-media.chatglm.cn/files/1c1e2bdd-c7d7-4b8c-88ca-3da875e11d70.png?auth_key=1875246085-d5045681c11b482680c5cad4a55a3080-0-193a45a8ed26e6bd9db8a226a86bb19a',
-} as const
+export const heroVideoEmbedSrc =
+  'https://www.youtube.com/embed/5Ku2SNDLFyY?autoplay=1&mute=1&loop=1&playlist=5Ku2SNDLFyY&controls=0&showinfo=0&playsinline=1&rel=0' as const
+
+export const workshopVideoEmbedSrc =
+  'https://www.youtube.com/embed/GcCYhUa_kGk?autoplay=1&mute=1&loop=1&playlist=GcCYhUa_kGk&controls=0&showinfo=0&playsinline=1&rel=0' as const
 
 export const megaMenuFeaturedImage = '/mega-menu-featured.png'
 
