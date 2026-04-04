@@ -11,6 +11,8 @@ export const footerVideoEmbedSrc =
 
 export const megaMenuFeaturedImage = '/mega-menu-featured.png'
 
+export const brandLogoSrc = '/logo.png' as const
+
 export const categoryCards = [
   {
     id: 'skin' as const,

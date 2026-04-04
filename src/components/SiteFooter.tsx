@@ -1,5 +1,10 @@
 import { useTranslation } from 'react-i18next'
-import { contact, footerProducts, footerVideoEmbedSrc } from '../data/content'
+import {
+  brandLogoSrc,
+  contact,
+  footerProducts,
+  footerVideoEmbedSrc,
+} from '../data/content'
 
 export function SiteFooter() {
   const { t } = useTranslation()
@@ -18,7 +23,16 @@ export function SiteFooter() {
         />
       </div>
       <div className="footer-container">
-        <div className="footer-logo">{t('brand.wordmark')}</div>
+        <a href="#home" className="footer-logo">
+          <img
+            src={brandLogoSrc}
+            alt={t('brand.wordmark')}
+            className="footer-logo__img"
+            width={280}
+            height={70}
+            decoding="async"
+          />
+        </a>
 
         <div className="footer-content">
           <div className="footer-column">

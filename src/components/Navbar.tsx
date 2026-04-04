@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { navRoutes } from '../data/content'
+import { brandLogoSrc, navRoutes } from '../data/content'
 import { LanguageSwitcher } from './LanguageSwitcher'
 import { ProductsMegaMenu } from './ProductsMegaMenu'
 
@@ -10,7 +10,14 @@ export function Navbar() {
     <header className="site-header">
       <div className="site-header__inner">
         <a href="#home" className="logo">
-          {t('brand.wordmark')}
+          <img
+            src={brandLogoSrc}
+            alt={t('brand.wordmark')}
+            className="logo__img"
+            width={160}
+            height={40}
+            decoding="async"
+          />
         </a>
 
         <nav className="site-nav" aria-label={t('nav.aria')}>
