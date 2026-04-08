@@ -16,18 +16,15 @@ export const brandLogoSrc = '/logo.png' as const
 export const categoryCards = [
   {
     id: 'skin' as const,
-    image:
-      'https://z-cdn-media.chatglm.cn/files/2e2a7a97-dff8-4c94-bcb6-7ea9d33d1ee2.png?auth_key=1875246085-6f1aef92ff094504841c100a18b55d75-0-e65593db4fb09c4e9262faf9bf994867',
+    image: '/images/gloseria-skin-series.png',
   },
   {
     id: 'volumegen' as const,
-    image:
-      'https://z-cdn-media.chatglm.cn/files/2e2a7a97-dff8-4c94-bcb6-7ea9d33d1ee2.png?auth_key=1875246085-6f1aef92ff094504841c100a18b55d75-0-e65593db4fb09c4e9262faf9bf994867',
+    image: '/images/gloseria-voluregen-series.png',
   },
   {
     id: 'genital' as const,
-    image:
-      'https://z-cdn-media.chatglm.cn/files/2e2a7a97-dff8-4c94-bcb6-7ea9d33d1ee2.png?auth_key=1875246085-6f1aef92ff094504841c100a18b55d75-0-e65593db4fb09c4e9262faf9bf994867',
+    image: '/images/gloseria-genital-series.png',
   },
 ] as const
 

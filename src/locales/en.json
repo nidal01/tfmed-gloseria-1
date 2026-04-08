@@ -17,8 +17,8 @@
     "switch": "Choose language",
     "tr": "Türkçe",
     "en": "English",
-    "currentTr": "🇹🇷 TR",
-    "currentEn": "🇬🇧 EN"
+    "currentTr": "TR",
+    "currentEn": "EN"
   },
   "megaMenu": {
     "aria": "Product categories",

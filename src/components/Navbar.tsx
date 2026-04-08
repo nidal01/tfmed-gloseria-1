@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { brandLogoSrc, navRoutes } from '../data/content'
 import { LanguageSwitcher } from './LanguageSwitcher'
@@ -5,9 +6,22 @@ import { ProductsMegaMenu } from './ProductsMegaMenu'
 
 export function Navbar() {
   const { t } = useTranslation()
+  const [isAtTop, setIsAtTop] = useState(true)
+
+  useEffect(() => {
+    const thresholdPx = 8
+
+    const update = () => {
+      setIsAtTop(window.scrollY <= thresholdPx)
+    }
+
+    update()
+    window.addEventListener('scroll', update, { passive: true })
+    return () => window.removeEventListener('scroll', update)
+  }, [])
 
   return (
-    <header className="site-header">
+    <header className={`site-header ${isAtTop ? 'site-header--top' : 'site-header--scrolled'}`}>
       <div className="site-header__inner">
         <a href="#home" className="logo">
           <img
