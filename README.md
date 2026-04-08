@@ -1,5 +1,38 @@
 # React + TypeScript + Vite
 
+## SPA routing (History mode) deploy notes
+
+Bu proje TanStack Router ile `/kurumsal` gibi **history routing** kullanır. Prod ortamda sayfa yenilemede 404 olmaması için sunucunun tüm route'ları `index.html`'e yönlendirmesi gerekir.
+
+### Vercel
+
+`vercel.json` ekleyip şu rewrite kuralını kullanın:
+
+```json
+{
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+}
+```
+
+### Nginx
+
+Site config içinde:
+
+```nginx
+try_files $uri $uri/ /index.html;
+```
+
+### Apache / cPanel (.htaccess)
+
+Proje çıktısının bulunduğu dizine `.htaccess` ekleyin:
+
+```apache
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+```
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

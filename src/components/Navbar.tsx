@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { brandLogoSrc, navRoutes } from '../data/content'
 import { LanguageSwitcher } from './LanguageSwitcher'
 import { ProductsMegaMenu } from './ProductsMegaMenu'
+import { Link } from '@tanstack/react-router'
 
 export function Navbar() {
   const { t } = useTranslation()
@@ -43,6 +44,12 @@ export function Navbar() {
                     {t(item.labelKey)}
                   </a>
                   <ProductsMegaMenu />
+                </li>
+              ) : item.href === '#corporate' ? (
+                <li key={item.href} className="nav-item">
+                  <Link to="/kurumsal" className="nav-link">
+                    {t(item.labelKey)}
+                  </Link>
                 </li>
               ) : (
                 <li key={item.href} className="nav-item">
