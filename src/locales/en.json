@@ -7,6 +7,9 @@
   },
   "nav": {
     "aria": "Main menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mobileMenuAria": "Mobile menu",
     "home": "HOME",
     "corporate": "CORPORATE",
     "products": "PRODUCTS +",

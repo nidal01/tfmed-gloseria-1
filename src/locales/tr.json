@@ -7,6 +7,9 @@
   },
   "nav": {
     "aria": "Ana menü",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat",
+    "mobileMenuAria": "Mobil menü",
     "home": "ANA SAYFA",
     "corporate": "KURUMSAL",
     "products": "ÜRÜNLER +",
