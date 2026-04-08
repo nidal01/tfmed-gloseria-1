@@ -67,7 +67,7 @@ export function Navbar() {
   return (
     <header className={`site-header ${isAtTop ? 'site-header--top' : 'site-header--scrolled'}`}>
       <div className="site-header__inner">
-        <a href="#home" className="logo">
+        <Link to="/" className="logo">
           <img
             src={brandLogoSrc}
             alt={t('brand.wordmark')}
@@ -76,7 +76,7 @@ export function Navbar() {
             height={40}
             decoding="async"
           />
-        </a>
+        </Link>
 
         <nav className="site-nav" aria-label={t('nav.aria')}>
           <ul className="nav-menu">

@@ -29,7 +29,7 @@
       {
         "title": "CİLT SERİSİ",
         "links": [
-          { "href": "#urun-blue-shine", "label": "Blue Shine" },
+          { "href": "/blue-shine", "label": "Blue Shine" },
           { "href": "#urun-anti-aging-effect", "label": "Anti Aging Effect" },
           { "href": "#urun-anti-hair-loss", "label": "Anti Hair Loss" },
           { "href": "#urun-eye-shimmer", "label": "Eye Shimmer" },
