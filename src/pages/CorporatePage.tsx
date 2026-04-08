@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { InnerHero } from '../components/InnerHero'
 import { workshopVideoEmbedSrc } from '../data/content'
+import { YouTubeEmbed } from '../components/YouTubeEmbed'
 
 export function CorporatePage() {
   const { t } = useTranslation()
@@ -102,13 +103,10 @@ export function CorporatePage() {
 
           <section className="corporate__workshopCard" aria-label="Workshop">
             <div className="corporate__workshopMedia" aria-hidden="true">
-              <iframe
+              <YouTubeEmbed
                 className="corporate__workshopVideo"
                 src={workshopVideoEmbedSrc}
                 title=""
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                referrerPolicy="strict-origin-when-cross-origin"
               />
             </div>
             <div className="corporate__workshopContent">

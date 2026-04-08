@@ -5,6 +5,7 @@ import {
   footerProducts,
   footerVideoEmbedSrc,
 } from '../data/content'
+import { YouTubeEmbed } from './YouTubeEmbed'
 
 export function SiteFooter() {
   const { t } = useTranslation()
@@ -13,13 +14,10 @@ export function SiteFooter() {
   return (
     <footer className="footer" id="contact">
       <div className="footer-video-frame">
-        <iframe
+        <YouTubeEmbed
           className="footer-video"
           src={footerVideoEmbedSrc}
           title={t('footer.videoTitle')}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-          referrerPolicy="strict-origin-when-cross-origin"
         />
       </div>
       <div className="footer-container">

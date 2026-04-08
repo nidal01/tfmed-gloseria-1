@@ -1,16 +1,14 @@
 import { heroVideoEmbedSrc } from '../data/content'
+import { YouTubeEmbed } from './YouTubeEmbed'
 
-export function InnerHero({ title }: { title: string }) {
+export function InnerHero({ title, videoSrc }: { title: string; videoSrc?: string }) {
   return (
     <section className="inner-hero" aria-label={title}>
       <div className="inner-hero__videoFrame" aria-hidden="true">
-        <iframe
+        <YouTubeEmbed
           className="inner-hero__video"
-          src={heroVideoEmbedSrc}
+          src={videoSrc ?? heroVideoEmbedSrc}
           title=""
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-          referrerPolicy="strict-origin-when-cross-origin"
         />
       </div>
 

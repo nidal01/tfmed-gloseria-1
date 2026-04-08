@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { heroVideoEmbedSrc } from '../data/content'
+import { YouTubeEmbed } from './YouTubeEmbed'
 
 export function Hero() {
   const { t } = useTranslation()
@@ -7,13 +8,10 @@ export function Hero() {
   return (
     <section className="hero-section" id="home" aria-labelledby="hero-heading">
       <div className="hero-video-frame">
-        <iframe
+        <YouTubeEmbed
           className="hero-video"
           src={heroVideoEmbedSrc}
           title={t('hero.videoTitle')}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-          referrerPolicy="strict-origin-when-cross-origin"
         />
       </div>
       <div className="hero-content">
