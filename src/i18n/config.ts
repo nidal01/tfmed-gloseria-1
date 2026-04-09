@@ -1,26 +1,55 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
+import az from '../locales/az.json'
+import de from '../locales/de.json'
 import en from '../locales/en.json'
+import es from '../locales/es.json'
+import pt from '../locales/pt.json'
+import ru from '../locales/ru.json'
 import tr from '../locales/tr.json'
 
 export const LANGUAGE_STORAGE_KEY = 'site-language'
 
-function storedOrBrowserLanguage(): string {
+export const SITE_LANGUAGES = ['tr', 'en', 'de', 'pt', 'es', 'ru', 'az'] as const
+export type SiteLanguage = (typeof SITE_LANGUAGES)[number]
+
+function isSiteLanguage(value: string): value is SiteLanguage {
+  return (SITE_LANGUAGES as readonly string[]).includes(value)
+}
+
+function storedOrBrowserLanguage(): SiteLanguage {
   try {
     const stored = localStorage.getItem(LANGUAGE_STORAGE_KEY)
-    if (stored === 'tr' || stored === 'en') return stored
+    if (stored && isSiteLanguage(stored)) return stored
   } catch {
     /* private mode / SSR */
   }
   if (typeof navigator !== 'undefined') {
     const nav = navigator.language.toLowerCase()
+    if (nav.startsWith('tr')) return 'tr'
     if (nav.startsWith('en')) return 'en'
+    if (nav.startsWith('de')) return 'de'
+    if (nav.startsWith('pt')) return 'pt'
+    if (nav.startsWith('es')) return 'es'
+    if (nav.startsWith('ru')) return 'ru'
+    if (nav.startsWith('az')) return 'az'
   }
   return 'tr'
 }
 
+const HTML_LANG: Record<SiteLanguage, string> = {
+  tr: 'tr',
+  en: 'en',
+  de: 'de',
+  pt: 'pt',
+  es: 'es',
+  ru: 'ru',
+  az: 'az',
+}
+
 function syncDocument(lang: string) {
-  document.documentElement.lang = lang === 'en' ? 'en' : 'tr'
+  const code = isSiteLanguage(lang) ? lang : 'tr'
+  document.documentElement.lang = HTML_LANG[code]
   document.title = i18n.t('meta.title')
 }
 
@@ -30,9 +59,21 @@ void i18n
     resources: {
       tr: { translation: tr },
       en: { translation: en },
+      de: { translation: de },
+      pt: { translation: pt },
+      es: { translation: es },
+      ru: { translation: ru },
+      az: { translation: az },
     },
     lng: storedOrBrowserLanguage(),
-    fallbackLng: 'tr',
+    fallbackLng: {
+      default: ['en', 'tr'],
+      de: ['en', 'tr'],
+      pt: ['en', 'tr'],
+      es: ['en', 'tr'],
+      ru: ['en', 'tr'],
+      az: ['tr', 'en'],
+    },
     interpolation: { escapeValue: false },
   })
   .then(() => {
@@ -43,7 +84,7 @@ i18n.on('languageChanged', (lng) => {
   syncDocument(lng)
 })
 
-export function changeSiteLanguage(lng: 'tr' | 'en') {
+export function changeSiteLanguage(lng: SiteLanguage) {
   void i18n.changeLanguage(lng)
   try {
     localStorage.setItem(LANGUAGE_STORAGE_KEY, lng)

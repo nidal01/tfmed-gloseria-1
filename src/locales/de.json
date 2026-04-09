@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "title": "Professionelle medizinisch-ästhetische Produkte"
+  },
+  "brand": {
+    "wordmark": "GLOSERIA"
+  },
+  "nav": {
+    "aria": "Hauptmenü",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "mobileMenuAria": "Mobiles Menü",
+    "home": "STARTSEITE",
+    "corporate": "ÜBER UNS",
+    "products": "PRODUKTE +",
+    "representatives": "VERTRETUNGEN",
+    "contact": "KONTAKT"
+  },
+  "lang": {
+    "switch": "Sprache wählen",
+    "tr": "Türkçe",
+    "en": "English",
+    "de": "Deutsch",
+    "pt": "Português",
+    "es": "Español",
+    "ru": "Русский",
+    "az": "Azərbaycan",
+    "currentTr": "TR",
+    "currentEn": "EN",
+    "currentDe": "DE",
+    "currentPt": "PT",
+    "currentEs": "ES",
+    "currentRu": "RU",
+    "currentAz": "AZ"
+  },
+  "megaMenu": {
+    "aria": "Produktkategorien",
+    "columns": [
+      {
+        "title": "SKIN SERIES",
+        "links": [
+          { "href": "/blue-shine", "label": "Blue Shine" },
+          { "href": "/anti-aging-effect", "label": "Anti Aging Effect" },
+          { "href": "/anti-hair-loss", "label": "Anti Hair Loss" },
+          { "href": "/eye-shimmer", "label": "Eye Shimmer" },
+          { "href": "/whitening-effect", "label": "Whitening Effect" },
+          { "href": "/pure-dna", "label": "Pure Dna" }
+        ]
+      },
+      {
+        "title": "VOLUREGEN SERIES",
+        "links": [
+          { "href": "/voluregen-hydrocalcium", "label": "Hydrocalcium" },
+          { "href": "/voluregen-biostimulator", "label": "Bio Stimulator" }
+        ]
+      },
+      {
+        "title": "GENITAL SERIES",
+        "links": [
+          { "href": "/g-white", "label": "G White" },
+          { "href": "/h-pause", "label": "H Pause" },
+          { "href": "/rejuvenation", "label": "Rejuvenation" }
+        ]
+      },
+      {
+        "title": "SHAPE SERIES",
+        "links": [
+          { "href": "/liposhape-body", "label": "Liposhape Body" },
+          { "href": "/liposhape-face", "label": "Liposhape Face" }
+        ]
+      }
+    ],
+    "featured": {
+      "href": "#urun-ultimate-5",
+      "imageAlt": "Ultimate 5 Produktbox",
+      "label": "Gloseria Ultimate 5 →"
+    }
+  },
+  "hero": {
+    "imageAlt": "Hero-Hintergrund",
+    "videoTitle": "Hintergrundvideo im Hero-Bereich",
+    "subtitle": "NÄCHSTE GENERATION",
+    "titleLine1": "ERNEUERUNG",
+    "titleLine2": "PROTOKOLLE"
+  },
+  "categories": {
+    "cta": "Produkte ansehen +",
+    "skin": {
+      "name": "SKIN SERIES",
+      "alt": "Skin-Serie"
+    },
+    "volumegen": {
+      "name": "VOLUMEGEN SERIES",
+      "alt": "Voluregen-Serie"
+    },
+    "genital": {
+      "name": "GENITAL SERIES",
+      "alt": "Genital-Serie"
+    }
+  },
+  "professional": {
+    "titleLine1": "Entwickelt für",
+    "titleLine2": "Profis",
+    "paragraph1": "Gloseria bietet hochmoderne technologische Wirkstoffe, die auf die biologischen Bedürfnisse der Haut abgestimmt sind.",
+    "paragraph2": "Jedes Produkt ist mit professionellen Protokollen konzipiert, die sich in klinische Anwendungen integrieren lassen."
+  },
+  "about": {
+    "headline": "Gloseria bietet professionelle Produkte für die Anforderungen von Dermatologinnen und Ärztinnen der ästhetischen Medizin."
+  },
+  "features": {
+    "aria": "Highlights",
+    "items": [
+      {
+        "number": "01",
+        "title": "Molekulare Präzision",
+        "description": "Unsere Produkte werden mit fortgeschrittenen biotechnologischen Verfahren entwickelt, die sicherstellen, dass Wirkstoffe das Zielgewebe mit maximaler Stabilität erreichen. Jede Ampulle ist ein konzentriertes technisches Meisterwerk, das klinische Ergebnisse optimiert."
+      },
+      {
+        "number": "02",
+        "title": "Synergistische Protokolle",
+        "description": "Gloseria-Produkte sind nicht nur Einzellösungen, sondern intelligente Systeme, die miteinander kombiniert werden können. Von der Punktbehandlung bis zur Biostimulation bieten wir ein flexibles Anwendungsspektrum für Ihre klinischen Protokolle."
+      },
+      {
+        "number": "03",
+        "title": "Biokompatibel und sicher",
+        "description": "Sicherheit hat für uns oberste Priorität – das sensibelste Kriterium für Dermatologinnen. Die Gloseria-Serie umfasst professionelle Formulierungen, die vollständig mit dem Hautgewebe verträglich sind, Entzündungsrisiken minimieren und höchste Sterilisationsstandards einhalten."
+      },
+      {
+        "number": "04",
+        "title": "Evidenzbasierte Ästhetik",
+        "description": "Wir vertrauen klinischen Daten, nicht Marketingversprechen. Gloseria folgt der aktuellsten Literatur der ästhetischen Medizin und liefert \"vorhersehbare\" Ergebnisse, die den Erwartungen von Ärztinnen und Ärzten entsprechen."
+      }
+    ]
+  },
+  "workshop": {
+    "title": "Workshop",
+    "videoTitle": "Hintergrundvideo im Workshop-Bereich",
+    "intro": "Gloseria organisiert in verschiedenen Städten spezielle, praxisnahe Workshops mit begrenzter Teilnehmerzahl für Dermatologinnen und Ärztinnen der ästhetischen Medizin.",
+    "paragraph1": "In diesen exklusiven Treffen werden die wissenschaftlichen Grundlagen fortgeschrittener Formulierungen, klinischer Protokolle und erfolgreicher Applikationstechniken direkt vermittelt. Durch Live-Demonstrationen und Fallbesprechungen wird theoretisches Wissen in Spitzenklinische Erfahrung überführt.",
+    "paragraph2": "Gloseria-Workshops vertiefen das Fachwissen von Profis und heben klinische Standards auf die nächste Stufe.",
+    "cta": "WORKSHOPS ENTDECKEN →"
+  },
+  "events": {
+    "title": "Neuigkeiten & Veranstaltungen",
+    "national": {
+      "title": "8. Internationaler Kongress für Ästhetische Medizin",
+      "imageAlt": "8. Internationaler Kongress für Ästhetische Medizin",
+      "description": "Gloseria nahm am 8. Internationalen Kongress für Ästhetische Medizin teil – einer der renommiertesten Veranstaltungen der Branche – und präsentierte Fachleuten ihr innovatives Produktportfolio und den wissenschaftlichen Ansatz."
+    },
+    "international": {
+      "title": "8. Internationaler Medizinisch-Ästhetischer Kongress",
+      "imageAlt": "8. Internationaler Medizinisch-Ästhetischer Kongress",
+      "description": "Gloseria nahm am 8. Internationalen Medizinisch-Ästhetischen Kongress teil – einer der renommiertesten Veranstaltungen der Branche – und präsentierte Fachleuten ihr innovatives Produktportfolio und den wissenschaftlichen Ansatz."
+    }
+  },
+  "footer": {
+    "videoTitle": "Hintergrundvideo im Footer",
+    "products": "UNSERE PRODUKTE",
+    "contact": "KONTAKT"
+  },
+  "corporatePage": {
+    "heading": "Ein wissenschaftlich geprägter Ansatz",
+    "intro": "Gloseria ist eine Marke, die Produkte für den professionellen Einsatz in Dermatologie und ästhetischer Medizin entwickelt. Unsere Produkte basieren auf einem wissenschaftlichen Formulierungsansatz, der die biologische Struktur der Haut in den Mittelpunkt stellt. Unser Ziel ist es, Lösungen zu entwickeln, die Ärztinnen und Ärzte sicher in der klinischen Praxis einsetzen können, hohe Wirksamkeit bieten und nachhaltige Ergebnisse liefern.",
+    "missionTitle": "Unsere Mission",
+    "missionText": "Lösungen für Dermatologinnen und Ärztinnen der ästhetischen Medizin zu entwickeln – fundiert in der Wissenschaft, mit hoher klinischer Präzision und zum Wohle der Patientenzufriedenheit.",
+    "visionTitle": "Unsere Vision",
+    "visionText": "In diesem Bereich national und international eine Referenzmarke zu sein – mit innovativem Ansatz, prestigeträchtiger Markenposition und Produkten, die auf klinischen Erfolg ausgerichtet sind.",
+    "aboutImageAlt": "Gloseria Firmenveranstaltung",
+    "splitParagraph": "Gloseria beschränkt Qualität im Dermokosmetikbereich nicht auf die Formulierung; sie setzt auf hohe Standards von der Produktion bis zum klinischen Feedback. Unser Produktentwicklungsansatz vereint Wirksamkeit, Sicherheit und die Anforderungen des professionellen Einsatzes.",
+    "valuesHeading": "Unsere Werte",
+    "values": [
+      {
+        "title": "Wissenschaftliche Glaubwürdigkeit",
+        "text": "Alle unsere Produkte werden auf Basis aktueller wissenschaftlicher Daten und klinischen Feedbacks entwickelt."
+      },
+      {
+        "title": "Professioneller Fokus",
+        "text": "Gloseria bietet ausschließlich Lösungen, die den Anforderungen des professionellen Einsatzes entsprechen."
+      },
+      {
+        "title": "Hohe Wirksamkeit",
+        "text": "Unsere Formulierungen sind darauf ausgelegt, mit gezielten Wirkstoffen maximale klinische Leistung zu erzielen."
+      },
+      {
+        "title": "Kontinuierliche Verbesserung",
+        "text": "Unser Produktportfolio wird fortlaufend an Innovationen in Dermatologie und ästhetischer Medizin angepasst."
+      },
+      {
+        "title": "Bildung und Austausch",
+        "text": "Wir fördern Wissensaustausch und berufliche Weiterentwicklung durch praxisnahe Workshops und klinische Treffen."
+      }
+    ],
+    "closingParagraph": "Diese ganzheitliche Perspektive macht Gloseria zu einem nachhaltigen und verlässlichen Lösungspartner in der klinischen Anwendung.",
+    "workshop": {
+      "aria": "Workshop",
+      "title": "Teil der professionellen Erfahrung",
+      "text": "Gloseria bündelt klinisches Wissen und Erfahrung in praxisnahen Workshops in verschiedenen Städten. Diese Veranstaltungen stärken die Applikationskompetenz von Ärztinnen und Ärzten und heben klinische Standards.",
+      "cta": "WORKSHOPS ENTDECKEN"
+    },
+    "futureHeading": "Blick in die Zukunft",
+    "futureLead": "Gloseria liefert weiterhin wissenschaftlich fundierte Lösungen und vereint Qualität, Vertrauen und Prestige im Bereich der medizinischen Ästhetik."
+  },
+  "productPage": {
+    "notFoundHero": "Produkt nicht gefunden",
+    "notFoundTitle": "Produkt nicht gefunden",
+    "notFoundText": "Diese Produktseite ist möglicherweise noch nicht verfügbar.",
+    "statsAria": "Produktdetails",
+    "formAria": "Formular",
+    "imagePlaceholder": "Produktbild"
+  },
+  "contactPage": {
+    "heading": "Kontakt",
+    "lede": "Für geschäftliche Anfragen und Fragen zu unseren Produkten füllen Sie das Formular aus; wir melden uns schnellstmöglich.",
+    "infoAria": "Kontaktinformationen",
+    "info": {
+      "address": "Adresse",
+      "phone": "Telefon",
+      "email": "E-Mail"
+    },
+    "form": {
+      "aria": "Kontaktformular",
+      "kicker": "KONTAKT",
+      "title": "Nachricht senden",
+      "sub": "Hinterlassen Sie Ihre Daten. Das Formular validiert derzeit nur und zeigt einen Hinweis auf der Seite (kein Backend).",
+      "fields": {
+        "name": "Vollständiger Name",
+        "email": "E-Mail",
+        "phone": "Telefon (optional)",
+        "message": "Nachricht"
+      },
+      "submit": "Senden",
+      "successTitle": "Nachricht erhalten",
+      "successText": "Vielen Dank. Wir melden uns so bald wie möglich.",
+      "newMessage": "Neue Nachricht schreiben",
+      "errors": {
+        "required": "Dieses Feld ist erforderlich.",
+        "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+        "messageMin": "Die Nachricht muss mindestens 10 Zeichen lang sein."
+      }
+    }
+  }
+}

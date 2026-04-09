@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "title": "Produtos profissionais de medicina estética"
+  },
+  "brand": {
+    "wordmark": "GLOSERIA"
+  },
+  "nav": {
+    "aria": "Menu principal",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu",
+    "mobileMenuAria": "Menu móvel",
+    "home": "INÍCIO",
+    "corporate": "SOBRE NÓS",
+    "products": "PRODUTOS +",
+    "representatives": "REPRESENTAÇÕES",
+    "contact": "CONTACTO"
+  },
+  "lang": {
+    "switch": "Escolher idioma",
+    "tr": "Türkçe",
+    "en": "English",
+    "de": "Deutsch",
+    "pt": "Português",
+    "es": "Español",
+    "ru": "Русский",
+    "az": "Azərbaycan",
+    "currentTr": "TR",
+    "currentEn": "EN",
+    "currentDe": "DE",
+    "currentPt": "PT",
+    "currentEs": "ES",
+    "currentRu": "RU",
+    "currentAz": "AZ"
+  },
+  "megaMenu": {
+    "aria": "Categorias de produtos",
+    "columns": [
+      {
+        "title": "SKIN SERIES",
+        "links": [
+          { "href": "/blue-shine", "label": "Blue Shine" },
+          { "href": "/anti-aging-effect", "label": "Anti Aging Effect" },
+          { "href": "/anti-hair-loss", "label": "Anti Hair Loss" },
+          { "href": "/eye-shimmer", "label": "Eye Shimmer" },
+          { "href": "/whitening-effect", "label": "Whitening Effect" },
+          { "href": "/pure-dna", "label": "Pure Dna" }
+        ]
+      },
+      {
+        "title": "VOLUREGEN SERIES",
+        "links": [
+          { "href": "/voluregen-hydrocalcium", "label": "Hydrocalcium" },
+          { "href": "/voluregen-biostimulator", "label": "Bio Stimulator" }
+        ]
+      },
+      {
+        "title": "GENITAL SERIES",
+        "links": [
+          { "href": "/g-white", "label": "G White" },
+          { "href": "/h-pause", "label": "H Pause" },
+          { "href": "/rejuvenation", "label": "Rejuvenation" }
+        ]
+      },
+      {
+        "title": "SHAPE SERIES",
+        "links": [
+          { "href": "/liposhape-body", "label": "Liposhape Body" },
+          { "href": "/liposhape-face", "label": "Liposhape Face" }
+        ]
+      }
+    ],
+    "featured": {
+      "href": "#urun-ultimate-5",
+      "imageAlt": "Caixa do produto Ultimate 5",
+      "label": "Gloseria Ultimate 5 →"
+    }
+  },
+  "hero": {
+    "imageAlt": "Fundo do hero",
+    "videoTitle": "Vídeo de fundo da secção hero",
+    "subtitle": "NOVA GERAÇÃO",
+    "titleLine1": "RENOVAÇÃO",
+    "titleLine2": "PROTOCOLOS"
+  },
+  "categories": {
+    "cta": "Ver produtos +",
+    "skin": {
+      "name": "SKIN SERIES",
+      "alt": "Série Skin"
+    },
+    "volumegen": {
+      "name": "VOLUMEGEN SERIES",
+      "alt": "Série Voluregen"
+    },
+    "genital": {
+      "name": "GENITAL SERIES",
+      "alt": "Série Genital"
+    }
+  },
+  "professional": {
+    "titleLine1": "Desenvolvido para",
+    "titleLine2": "Profissionais",
+    "paragraph1": "A Gloseria oferece ativos tecnológicos avançados desenvolvidos de acordo com as necessidades biológicas da pele.",
+    "paragraph2": "Cada produto é concebido com protocolos profissionais que podem ser integrados em aplicações clínicas."
+  },
+  "about": {
+    "headline": "A Gloseria oferece produtos profissionais desenvolvidos para as necessidades de dermatologistas e médicos de medicina estética."
+  },
+  "features": {
+    "aria": "Destaques",
+    "items": [
+      {
+        "number": "01",
+        "title": "Precisão molecular",
+        "description": "Os nossos produtos são desenvolvidos através de processos biotecnológicos avançados que garantem que os componentes ativos atinjem o tecido-alvo com máxima estabilidade. Cada frasco é uma obra de engenharia concentrada que otimiza os resultados clínicos."
+      },
+      {
+        "number": "02",
+        "title": "Protocolos sinérgicos",
+        "description": "Os produtos Gloseria não são apenas soluções isoladas, mas sistemas inteligentes que podem ser combinados. Do tratamento local à bioestimulação, oferecemos uma gama flexível de aplicações integráveis nos seus protocolos clínicos."
+      },
+      {
+        "number": "03",
+        "title": "Biocompatível e seguro",
+        "description": "Priorizamos a segurança, o critério mais sensível dos dermatologistas. A série Gloseria consiste em formulações profissionais totalmente compatíveis com o tecido cutâneo, que minimizam o risco inflamatório e mantêm os mais elevados padrões de esterilização."
+      },
+      {
+        "number": "04",
+        "title": "Estética baseada em evidências",
+        "description": "Acreditamos em dados clínicos, não em promessas de marketing. A Gloseria segue a literatura mais atual em medicina estética, oferecendo resultados \"previsíveis\" que correspondem às expectativas dos médicos."
+      }
+    ]
+  },
+  "workshop": {
+    "title": "Workshop",
+    "videoTitle": "Vídeo de fundo da secção workshop",
+    "intro": "A Gloseria organiza workshops especiais, práticos e com participação limitada para dermatologistas e médicos de medicina estética em várias cidades.",
+    "paragraph1": "Nestes encontros exclusivos, as bases científicas de formulações avançadas, protocolos clínicos e técnicas de aplicação de elevado sucesso são transmitidas em diálogo direto. Através de aplicações ao vivo e partilha de casos, o conhecimento teórico transforma-se em experiência clínica de topo.",
+    "paragraph2": "Os workshops Gloseria aprofundam o conhecimento dos profissionais e elevam os padrões clínicos ao nível seguinte.",
+    "cta": "DESCOBRIR WORKSHOPS →"
+  },
+  "events": {
+    "title": "Notícias e eventos",
+    "national": {
+      "title": "8.º Congresso Internacional de Medicina Estética",
+      "imageAlt": "8.º Congresso Internacional de Medicina Estética",
+      "description": "A Gloseria participou no 8.º Congresso Internacional de Medicina Estética, uma das organizações mais prestigiadas do setor, apresentando o seu portfólio inovador e a abordagem científica a profissionais do ramo."
+    },
+    "international": {
+      "title": "8.º Congresso Internacional de Medicina Estética Médica",
+      "imageAlt": "8.º Congresso Internacional de Medicina Estética Médica",
+      "description": "A Gloseria participou no 8.º Congresso Internacional de Medicina Estética Médica, uma das organizações mais prestigiadas do setor, apresentando o seu portfólio inovador e a abordagem científica a profissionais do ramo."
+    }
+  },
+  "footer": {
+    "videoTitle": "Vídeo de fundo do rodapé",
+    "products": "OS NOSSOS PRODUTOS",
+    "contact": "CONTACTO"
+  },
+  "corporatePage": {
+    "heading": "Uma abordagem moldada pela ciência",
+    "intro": "A Gloseria é uma marca que desenvolve produtos para uso profissional em dermatologia e medicina estética. Os nossos produtos são concebidos com uma abordagem científica de formulação que coloca a estrutura biológica da pele no centro. O nosso objetivo é desenvolver soluções que os médicos possam utilizar com segurança nas aplicações clínicas, com elevada eficácia e resultados sustentáveis.",
+    "missionTitle": "A nossa missão",
+    "missionText": "Desenvolver soluções para dermatologistas e médicos de medicina estética com base científica, elevada precisão clínica e contributo para a satisfação dos pacientes.",
+    "visionTitle": "A nossa visão",
+    "visionText": "Ser uma marca de referência no setor, a nível nacional e internacional, com uma abordagem inovadora, posição de prestígio e produtos focados no sucesso clínico.",
+    "aboutImageAlt": "Evento corporativo Gloseria",
+    "splitParagraph": "A Gloseria não limita a qualidade apenas à formulação no domínio dermocosmético; adota elevados padrões em todas as fases, desde a produção ao feedback clínico. A nossa abordagem ao desenvolvimento de produtos visa reunir eficácia, segurança e requisitos de uso profissional no mesmo ponto.",
+    "valuesHeading": "Os nossos valores",
+    "values": [
+      {
+        "title": "Credibilidade científica",
+        "text": "Todos os nossos produtos são desenvolvidos com base em dados científicos atuais e feedback clínico."
+      },
+      {
+        "title": "Foco profissional",
+        "text": "A Gloseria oferece apenas soluções adequadas aos requisitos de uso profissional."
+      },
+      {
+        "title": "Elevada eficácia",
+        "text": "As nossas formulações são concebidas para o máximo desempenho clínico com ingredientes ativos direcionados."
+      },
+      {
+        "title": "Melhoria contínua",
+        "text": "O nosso portfólio é atualizado continuamente em linha com as inovações em dermatologia e medicina estética."
+      },
+      {
+        "title": "Formação e partilha",
+        "text": "Apoiamos a partilha de conhecimento e o desenvolvimento profissional através de workshops práticos e encontros clínicos."
+      }
+    ],
+    "closingParagraph": "Esta perspetiva holística torna a Gloseria um parceiro de soluções sustentável e fiável nas aplicações clínicas.",
+    "workshop": {
+      "aria": "Workshop",
+      "title": "Parte da experiência profissional",
+      "text": "A Gloseria reúne conhecimento e experiência clínica através de workshops práticos em várias cidades. Estas organizações visam aumentar a competência de aplicação dos médicos e elevar os padrões clínicos.",
+      "cta": "DESCOBRIR WORKSHOPS"
+    },
+    "futureHeading": "Olhar para o futuro",
+    "futureLead": "A Gloseria continua a oferecer soluções sustentadas pela ciência, reunindo qualidade, confiança e prestígio no domínio da medicina estética."
+  },
+  "productPage": {
+    "notFoundHero": "Produto não encontrado",
+    "notFoundTitle": "Produto não encontrado",
+    "notFoundText": "Esta página de produto pode ainda não estar disponível.",
+    "statsAria": "Detalhes do produto",
+    "formAria": "Formulário",
+    "imagePlaceholder": "Imagem do produto"
+  },
+  "contactPage": {
+    "heading": "Contacte-nos",
+    "lede": "Para pedidos corporativos ou questões sobre os nossos produtos, preencha o formulário; responderemos o mais breve possível.",
+    "infoAria": "Informações de contacto",
+    "info": {
+      "address": "Morada",
+      "phone": "Telefone",
+      "email": "E-mail"
+    },
+    "form": {
+      "aria": "Formulário de contacto",
+      "kicker": "CONTACTO",
+      "title": "Enviar mensagem",
+      "sub": "Deixe os seus dados. Por agora, o formulário apenas valida e mostra um aviso na página (sem envio para servidor).",
+      "fields": {
+        "name": "Nome completo",
+        "email": "E-mail",
+        "phone": "Telefone (opcional)",
+        "message": "Mensagem"
+      },
+      "submit": "Enviar",
+      "successTitle": "Mensagem recebida",
+      "successText": "Obrigado. Entraremos em contacto consigo o mais breve possível.",
+      "newMessage": "Escrever nova mensagem",
+      "errors": {
+        "required": "Este campo é obrigatório.",
+        "email": "Introduza um endereço de e-mail válido.",
+        "messageMin": "A mensagem deve ter pelo menos 10 caracteres."
+      }
+    }
+  }
+}

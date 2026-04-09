@@ -1,12 +1,12 @@
+import type { CatalogOverlayLocale } from './catalog-i18n-types'
+import { PRODUCT_I18N_OVERLAYS } from './product-i18n-overlays'
+
+export type ProductStatI18nLocale = 'en' | CatalogOverlayLocale
+
 export type ProductStat = {
   label: string
   value: string
-  i18n?: {
-    en?: {
-      label?: string
-      value?: string
-    }
-  }
+  i18n?: Partial<Record<ProductStatI18nLocale, { label?: string; value?: string }>>
   icon?: string
 }
 
@@ -17,9 +17,7 @@ export type ProductFormCard = {
   rightSubtitle: string
   ctaLabel: string
   ctaHref: string
-  i18n?: {
-    en?: Partial<Omit<ProductFormCard, 'i18n'>>
-  }
+  i18n?: Partial<Record<ProductStatI18nLocale, Partial<Omit<ProductFormCard, 'i18n'>>>>
 }
 
 export type Product = {
@@ -32,12 +30,37 @@ export type Product = {
   heroVideoSrc?: string
   imageSrc?: string
   formCard?: ProductFormCard
-  i18n?: {
-    en?: Partial<Omit<Product, 'i18n' | 'stats' | 'formCard'>>
-  }
+  i18n?: Partial<Record<ProductStatI18nLocale, Partial<Omit<Product, 'i18n' | 'stats' | 'formCard'>>>>
 }
 
-export const products: Record<string, Product> = {
+function applyProductI18nOverlays(base: Record<string, Product>): Record<string, Product> {
+  const out: Record<string, Product> = {}
+  for (const slug of Object.keys(base)) {
+    const p = base[slug]
+    const ov = PRODUCT_I18N_OVERLAYS[slug]
+    if (!ov) {
+      out[slug] = p
+      continue
+    }
+    out[slug] = {
+      ...p,
+      i18n: { ...p.i18n, ...ov.i18n },
+      stats: p.stats.map((s, i) => ({
+        ...s,
+        i18n: { ...s.i18n, ...(ov.stats?.[i] ?? {}) },
+      })),
+      formCard: p.formCard
+        ? {
+            ...p.formCard,
+            i18n: { ...p.formCard.i18n, ...ov.formCard },
+          }
+        : undefined,
+    }
+  }
+  return out
+}
+
+const rawProducts: Record<string, Product> = {
   'blue-shine': {
     slug: 'blue-shine',
     title: 'Blue Shine',
@@ -714,3 +737,5 @@ export const products: Record<string, Product> = {
     },
   },
 }
+
+export const products = applyProductI18nOverlays(rawProducts)

@@ -20,8 +20,18 @@
     "switch": "Dil seçin",
     "tr": "Türkçe",
     "en": "English",
+    "de": "Deutsch",
+    "pt": "Português",
+    "es": "Español",
+    "ru": "Русский",
+    "az": "Azərbaycan",
     "currentTr": "TR",
-    "currentEn": "EN"
+    "currentEn": "EN",
+    "currentDe": "DE",
+    "currentPt": "PT",
+    "currentEs": "ES",
+    "currentRu": "RU",
+    "currentAz": "AZ"
   },
   "megaMenu": {
     "aria": "Ürün kategorileri",

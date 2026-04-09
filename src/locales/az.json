@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "title": "Peşəkar tibbi-estetik məhsullar"
+  },
+  "brand": {
+    "wordmark": "GLOSERIA"
+  },
+  "nav": {
+    "aria": "Əsas menyu",
+    "openMenu": "Menyunu aç",
+    "closeMenu": "Menyunu bağla",
+    "mobileMenuAria": "Mobil menyu",
+    "home": "ƏSAS SƏHİFƏ",
+    "corporate": "KORPORATİV",
+    "products": "MƏHSULLAR +",
+    "representatives": "NÜMAYƏNDƏLİKLƏR",
+    "contact": "ƏLAQƏ"
+  },
+  "lang": {
+    "switch": "Dil seçin",
+    "tr": "Türkçe",
+    "en": "English",
+    "de": "Deutsch",
+    "pt": "Português",
+    "es": "Español",
+    "ru": "Русский",
+    "az": "Azərbaycan",
+    "currentTr": "TR",
+    "currentEn": "EN",
+    "currentDe": "DE",
+    "currentPt": "PT",
+    "currentEs": "ES",
+    "currentRu": "RU",
+    "currentAz": "AZ"
+  },
+  "megaMenu": {
+    "aria": "Məhsul kateqoriyaları",
+    "columns": [
+      {
+        "title": "DƏRİ SERİYASI",
+        "links": [
+          { "href": "/blue-shine", "label": "Blue Shine" },
+          { "href": "/anti-aging-effect", "label": "Anti Aging Effect" },
+          { "href": "/anti-hair-loss", "label": "Anti Hair Loss" },
+          { "href": "/eye-shimmer", "label": "Eye Shimmer" },
+          { "href": "/whitening-effect", "label": "Whitening Effect" },
+          { "href": "/pure-dna", "label": "Pure Dna" }
+        ]
+      },
+      {
+        "title": "VOLUREGEN SERİYASI",
+        "links": [
+          { "href": "/voluregen-hydrocalcium", "label": "Hydrocalcium" },
+          { "href": "/voluregen-biostimulator", "label": "Bio Stimulator" }
+        ]
+      },
+      {
+        "title": "GENİTAL SERİYASI",
+        "links": [
+          { "href": "/g-white", "label": "G White" },
+          { "href": "/h-pause", "label": "H Pause" },
+          { "href": "/rejuvenation", "label": "Rejuvenation" }
+        ]
+      },
+      {
+        "title": "SHAPE SERİYASI",
+        "links": [
+          { "href": "/liposhape-body", "label": "Liposhape Body" },
+          { "href": "/liposhape-face", "label": "Liposhape Face" }
+        ]
+      }
+    ],
+    "featured": {
+      "href": "#urun-ultimate-5",
+      "imageAlt": "Ultimate 5 məhsul qutusu",
+      "label": "Gloseria Ultimate 5 →"
+    }
+  },
+  "hero": {
+    "imageAlt": "Hero fonu",
+    "videoTitle": "Hero bölməsi fon videosu",
+    "subtitle": "YENİ NƏSIL",
+    "titleLine1": "YENİLƏNMƏ",
+    "titleLine2": "PROTOKOLLARI"
+  },
+  "categories": {
+    "cta": "Məhsullara bax +",
+    "skin": {
+      "name": "DƏRİ SERİYASI",
+      "alt": "Dəri seriyası"
+    },
+    "volumegen": {
+      "name": "VOLUMEGEN SERİYASI",
+      "alt": "Voluregen seriyası"
+    },
+    "genital": {
+      "name": "GENİTAL SERİYASI",
+      "alt": "Genital seriyası"
+    }
+  },
+  "professional": {
+    "titleLine1": "Peşəkarlar üçün",
+    "titleLine2": "İnkişaf etdirilib",
+    "paragraph1": "Gloseria, dərinin bioloji ehtiyaclarına uyğun inkişaf etdirilmiş qabaqcıl texnologiya aktiv komponentləri təqdim edir.",
+    "paragraph2": "Hər məhsul kliniki tətbiqlərə inteqrasiya oluna bilən peşəkar protokollarla hazırlanır."
+  },
+  "about": {
+    "headline": "Gloseria dermatoloqlar və tibbi-estetik həkimlərin ehtiyacları üçün hazırlanmış peşəkar məhsullar təqdim edir."
+  },
+  "features": {
+    "aria": "Xüsusiyyətlər",
+    "items": [
+      {
+        "number": "01",
+        "title": "Molekulyar dəqiqlik",
+        "description": "Məhsullarımız aktiv komponentlərin hədəf toxumaya maksimum sabitliklə çatmasını təmin edən qabaqcıl biotexnoloji proseslərlə hazırlanır. Hər bir flakon klinik nəticələri optimallaşdıran konsentrləşdirilmiş mühəndislik əsəridir."
+      },
+      {
+        "number": "02",
+        "title": "Sinerji protokolları",
+        "description": "Gloseria məhsulları tək həllər deyil, bir-biri ilə birləşdirilə bilən ağıllı sistemlərdir. Ləkə müalicəsindən biostimulyasiyaya qədər klinik protokollarınıza inteqrasiya oluna bilən çevik tətbiq spektri təqdim edirik."
+      },
+      {
+        "number": "03",
+        "title": "Biouyğun və təhlükəsiz",
+        "description": "Dermatoloqların ən həssas meyarı olan təhlükəsizliyi prioritet sayırıq. Gloseria seriyası dəri toxuması ilə tam uyğun, iltihab riskini minimuma endirən və sterilizasiya standartları ən yüksək səviyyədə saxlanılan peşəkar tərkiblərdən ibarətdir."
+      },
+      {
+        "number": "04",
+        "title": "Sübuta əsaslanan estetika",
+        "description": "Marketinq vədlərinə yox, klinik məlumatlara inanırıq. Gloseria tibbi-estetika sahəsində ən aktual ədəbiyyatı izləyərək həkimlərin gözləntilərini qarşılayan \"proqnozlaşdırıla bilən\" nəticələr verir."
+      }
+    ]
+  },
+  "workshop": {
+    "title": "Workshop",
+    "videoTitle": "Workshop bölməsi fon videosu",
+    "intro": "Gloseria müxtəlif şəhərlərdə dermatoloqlar və tibbi-estetik həkimlər üçün xüsusi, praktiki və məhdud iştiraklı workshoplar təşkil edir.",
+    "paragraph1": "Bu seçilmiş görüşlərdə qabaqcıl formulasyonların elmi əsasları, klinik protokollar və yüksək uğur verən tətbiq texnikaları birbaşa ötürülür. Canlı tətbiqlər və kəslərin paylaşılması ilə nəzəri bilik yüksək səviyyəli klinik təcrübəyə çevrilir.",
+    "paragraph2": "Gloseria workshopları peşəkarların biliklərini dərinləşdirmək və klinik standartları növbəti səviyyəyə qaldırmaq üçün nəzərdə tutulub.",
+    "cta": "WORKSHOPLARI KƏŞF ET →"
+  },
+  "events": {
+    "title": "Yeniliklər",
+    "national": {
+      "title": "8-ci Milli Tibbi-Estetik Konqresi",
+      "imageAlt": "8-ci Milli Tibbi-Estetik Konqresi",
+      "description": "Gloseria tibbi-estetika sahəsinin ən prestijli təşkilatlardan biri olan 8-ci Milli Tibbi-Estetik Konqresində iştirak edərək innovativ məhsul portfeli və elmi yanaşmasını sənaye peşəkarları ilə birləşdirdi."
+    },
+    "international": {
+      "title": "8-ci Beynəlxalq Tibbi-Estetik Konqresi",
+      "imageAlt": "8-ci Beynəlxalq Tibbi-Estetik Konqresi",
+      "description": "Gloseria tibbi-estetika sahəsinin ən prestijli təşkilatlardan biri olan 8-ci Beynəlxalq Tibbi-Estetik Konqresində iştirak edərək innovativ məhsul portfeli və elmi yanaşmasını sənaye peşəkarları ilə birləşdirdi."
+    }
+  },
+  "footer": {
+    "videoTitle": "Alt bilgi bölməsi fon videosu",
+    "products": "MƏHSULLARIMIZ",
+    "contact": "ƏLAQƏ MƏLUMATLARI"
+  },
+  "corporatePage": {
+    "heading": "Elmə əsaslanan yanaşma",
+    "intro": "Gloseria dermatologiya və tibbi-estetika sahəsində peşəkar istifadə üçün məhsullar hazırlayan brenddir. Məhsullarımız dərinin bioloji quruluşunu mərkəzə alan elmi formulasyon anlayışı ilə dizayn edilir. Məqsədimiz həkimlərin kliniki tətbiqlərində etibarlı istifadə edə biləcəyi, yüksək effektivlik verən və davamlı nəticələr təmin edən həllər yaratmaqdır.",
+    "missionTitle": "Missiyamız",
+    "missionText": "Dermatoloqlar və tibbi-estetik həkimlər üçün elmi əsaslı, yüksək kliniki dəqiqlikdə və xəsta məmnuniyyətini dəstəkləyən həllər hazırlamaq.",
+    "visionTitle": "Vizyonumuz",
+    "visionText": "Sahəsində innovativ yanaşması, prestijli brend mövqeyi və klinik uğura yönəlmiş məhsulları ilə milli və beynəlxalq miqyasda istinad brendi olmaq.",
+    "aboutImageAlt": "Gloseria korporativ tədbir",
+    "splitParagraph": "Gloseria dermo-kosmetika sahəsində keyfiyyəti yalnız formulasyonla məhdudlaşdırmayan; istehsal proseslərindən klinik geri əlaqəyə qədər bütün mərhələlərdə yüksək standartları qəbul edən brenddir. Məhsul inkişafı yanaşımımız effektivlik, təhlükəsizlik və peşəkar istifadə tələblərini eyni nöqtədə birləşdirməyi hədəfləyir.",
+    "valuesHeading": "Dəyərlərimiz",
+    "values": [
+      {
+        "title": "Elmi etibarlılıq",
+        "text": "Bütün məhsullarımız aktual elmi məlumatlar və klinik geri əlaqə əsasında hazırlanır."
+      },
+      {
+        "title": "Peşəkar yönəlmişlik",
+        "text": "Gloseria yalnız peşəkar istifadə tələblərinə uyğun həllər təqdim edir."
+      },
+      {
+        "title": "Yüksək effektivlik",
+        "text": "Formulasiyalarımız hədəfə yönəldilmiş aktiv komponentlərlə maksimum klinik performans təmin edəcək şəkildə hazırlanır."
+      },
+      {
+        "title": "Davamlı inkişaf",
+        "text": "Məhsul portfelimiz dermatologiya və tibbi-estetika sahəsindəki yeniliklər istiqamətində davamlı yenilənir."
+      },
+      {
+        "title": "Təhsil və paylaşım",
+        "text": "Praktiki workshoplar və klinik görüşlər vasitəsilə bilik paylaşımını və peşəkar inkişafı dəstəkləyirik."
+      }
+    ],
+    "closingParagraph": "Bu bütöv baxış bucağı Gloserianı kliniki tətbiqlərdə davamlı və etibarlı həll tərəfdaşına çevirir.",
+    "workshop": {
+      "aria": "Workshop",
+      "title": "Peşəkar təcrübənin bir hissəsi",
+      "text": "Gloseria müxtəlif şəhərlərdə təşkil etdiyi praktiki workshoplarla klinik bilik və təcrübəni birləşdirir. Bu tədbirlər həkimlərin tətbiq səlahiyyətini artırmaq və klinik standartları yüksəltmək məqsədilə hazırlanır.",
+      "cta": "WORKSHOPLARI KƏŞF ET"
+    },
+    "futureHeading": "Gələcəyə baxış",
+    "futureLead": "Gloseria tibbi-estetika sahəsində keyfiyyət, etibar və prestiji birləşdirərək elmə əsaslanan həllər təqdim etməyə davam edir."
+  },
+  "productPage": {
+    "notFoundHero": "Məhsul tapılmadı",
+    "notFoundTitle": "Məhsul tapılmadı",
+    "notFoundText": "Bu məhsul səhifəsi hələ əlavə edilməyib.",
+    "statsAria": "Məhsul təfərrüatları",
+    "formAria": "Forma",
+    "imagePlaceholder": "Məhsul şəkli"
+  },
+  "contactPage": {
+    "heading": "Bizimlə əlaqə",
+    "lede": "Korporativ əlaqə sorğularınız və məhsullarımızla bağlı suallarınız üçün formu doldurun; ən qısa zamanda sizə cavab verək.",
+    "infoAria": "Əlaqə məlumatları",
+    "info": {
+      "address": "Ünvan",
+      "phone": "Telefon",
+      "email": "E-poçt"
+    },
+    "form": {
+      "aria": "Əlaqə formu",
+      "kicker": "ƏLAQƏ",
+      "title": "Mesaj göndərin",
+      "sub": "Məlumatlarınızı buraxın. Hazırda forma yalnız doğrulama və ekranda bildiriş göstərir (serverə göndərmə yoxdur).",
+      "fields": {
+        "name": "Ad Soyad",
+        "email": "E-poçt",
+        "phone": "Telefon (istəyə bağlı)",
+        "message": "Mesaj"
+      },
+      "submit": "Göndər",
+      "successTitle": "Mesajınız qəbul edildi",
+      "successText": "Təşəkkür edirik. Ən qısa zamanda sizinlə əlaqə saxlayacağıq.",
+      "newMessage": "Yeni mesaj yazın",
+      "errors": {
+        "required": "Bu sahə məcburidir.",
+        "email": "Zəhmət olmasa düzgün e-poçt ünvanı daxil edin.",
+        "messageMin": "Mesaj ən azı 10 simvol olmalıdır."
+      }
+    }
+  }
+}

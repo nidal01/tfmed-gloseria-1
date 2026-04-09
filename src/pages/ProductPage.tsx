@@ -2,7 +2,57 @@ import { useMemo, type ReactElement } from 'react'
 import { Link, useParams } from '@tanstack/react-router'
 import { useTranslation } from 'react-i18next'
 import { InnerHero } from '../components/InnerHero'
-import { products } from '../products/catalog'
+import { products, type Product, type ProductFormCard, type ProductStat, type ProductStatI18nLocale } from '../products/catalog'
+
+type CatalogUiLocale = 'tr' | ProductStatI18nLocale
+
+function resolveCatalogUiLocale(lang: string): CatalogUiLocale {
+  const c = lang?.toLowerCase() ?? ''
+  if (c.startsWith('tr')) return 'tr'
+  if (c.startsWith('az')) return 'az'
+  if (c.startsWith('en')) return 'en'
+  if (c.startsWith('de')) return 'de'
+  if (c.startsWith('pt')) return 'pt'
+  if (c.startsWith('es')) return 'es'
+  if (c.startsWith('ru')) return 'ru'
+  return 'tr'
+}
+
+function pickProductField(
+  product: Product,
+  loc: CatalogUiLocale,
+  key: 'title' | 'headline' | 'description' | 'ingredients',
+): string {
+  if (loc === 'tr') return product[key]
+  if (loc === 'az') {
+    const z = product.i18n?.az?.[key]
+    return z ?? product[key]
+  }
+  const row = product.i18n?.[loc]?.[key] ?? product.i18n?.en?.[key]
+  return row ?? product[key]
+}
+
+function pickStatLabel(stat: ProductStat, loc: CatalogUiLocale): string {
+  if (loc === 'tr') return stat.label
+  if (loc === 'az') return stat.i18n?.az?.label ?? stat.label
+  return stat.i18n?.[loc]?.label ?? stat.i18n?.en?.label ?? stat.label
+}
+
+function pickStatValue(stat: ProductStat, loc: CatalogUiLocale): string {
+  if (loc === 'tr') return stat.value
+  if (loc === 'az') return stat.i18n?.az?.value ?? stat.value
+  return stat.i18n?.[loc]?.value ?? stat.i18n?.en?.value ?? stat.value
+}
+
+function pickFormField(
+  fc: ProductFormCard,
+  loc: CatalogUiLocale,
+  key: 'leftTitle' | 'leftSubtitle' | 'rightTitle' | 'rightSubtitle' | 'ctaLabel',
+): string {
+  if (loc === 'tr') return fc[key]
+  if (loc === 'az') return fc.i18n?.az?.[key] ?? fc[key]
+  return fc.i18n?.[loc]?.[key] ?? fc.i18n?.en?.[key] ?? fc[key]
+}
 
 function CalendarIcon() {
   return (
@@ -52,9 +102,7 @@ export function ProductPage() {
   const { i18n, t } = useTranslation()
 
   const product = useMemo(() => products[slug], [slug])
-  const lang = i18n.language?.toLowerCase().startsWith('en') ? 'en' : 'tr'
-  const productI18n = lang === 'en' ? product?.i18n?.en : undefined
-  const formCardI18n = lang === 'en' ? product?.formCard?.i18n?.en : undefined
+  const catalogLocale = useMemo(() => resolveCatalogUiLocale(i18n.language ?? ''), [i18n.language])
 
   if (!product) {
     return (
@@ -70,10 +118,10 @@ export function ProductPage() {
     )
   }
 
-  const title = productI18n?.title ?? product.title
-  const headline = productI18n?.headline ?? product.headline
-  const description = productI18n?.description ?? product.description
-  const ingredients = productI18n?.ingredients ?? product.ingredients
+  const title = pickProductField(product, catalogLocale, 'title')
+  const headline = pickProductField(product, catalogLocale, 'headline')
+  const description = pickProductField(product, catalogLocale, 'description')
+  const ingredients = pickProductField(product, catalogLocale, 'ingredients')
 
   return (
     <main>
@@ -106,8 +154,8 @@ export function ProductPage() {
                   <StatIcon type={stat.icon || ''} />
                 </div>
                 <div className="product__statBody">
-                  <div className="product__statLabel">{lang === 'en' ? stat.i18n?.en?.label ?? stat.label : stat.label}</div>
-                  <div className="product__statValue">{lang === 'en' ? stat.i18n?.en?.value ?? stat.value : stat.value}</div>
+                  <div className="product__statLabel">{pickStatLabel(stat, catalogLocale)}</div>
+                  <div className="product__statValue">{pickStatValue(stat, catalogLocale)}</div>
                 </div>
               </div>
             ))}
@@ -118,21 +166,21 @@ export function ProductPage() {
               <div className="product__formCardInner">
                 <div className="product__formCardLeft">
                   <div className="product__formCardKicker">
-                    {lang === 'en' ? formCardI18n?.leftTitle ?? product.formCard.leftTitle : product.formCard.leftTitle}
+                    {pickFormField(product.formCard, catalogLocale, 'leftTitle')}
                   </div>
                   <div className="product__formCardSub">
-                    {lang === 'en' ? formCardI18n?.leftSubtitle ?? product.formCard.leftSubtitle : product.formCard.leftSubtitle}
+                    {pickFormField(product.formCard, catalogLocale, 'leftSubtitle')}
                   </div>
                 </div>
                 <div className="product__formCardRight">
                   <div className="product__formCardRightTitle">
-                    {lang === 'en' ? formCardI18n?.rightTitle ?? product.formCard.rightTitle : product.formCard.rightTitle}
+                    {pickFormField(product.formCard, catalogLocale, 'rightTitle')}
                   </div>
                   <div className="product__formCardRightText">
-                    {lang === 'en' ? formCardI18n?.rightSubtitle ?? product.formCard.rightSubtitle : product.formCard.rightSubtitle}
+                    {pickFormField(product.formCard, catalogLocale, 'rightSubtitle')}
                   </div>
                   <Link className="product__formCardCta" to={product.formCard.ctaHref}>
-                    {lang === 'en' ? formCardI18n?.ctaLabel ?? product.formCard.ctaLabel : product.formCard.ctaLabel}
+                    {pickFormField(product.formCard, catalogLocale, 'ctaLabel')}
                   </Link>
                 </div>
               </div>

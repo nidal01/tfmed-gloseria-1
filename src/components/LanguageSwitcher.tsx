@@ -1,9 +1,37 @@
 import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { changeSiteLanguage } from '../i18n/config'
+import { changeSiteLanguage, type SiteLanguage } from '../i18n/config'
 
-function resolveLang(code: string): 'tr' | 'en' {
-  return code.startsWith('en') ? 'en' : 'tr'
+const CURRENT_LABEL_KEY: Record<SiteLanguage, string> = {
+  tr: 'lang.currentTr',
+  en: 'lang.currentEn',
+  de: 'lang.currentDe',
+  pt: 'lang.currentPt',
+  es: 'lang.currentEs',
+  ru: 'lang.currentRu',
+  az: 'lang.currentAz',
+}
+
+const LANG_OPTIONS: { code: SiteLanguage; labelKey: string }[] = [
+  { code: 'tr', labelKey: 'lang.tr' },
+  { code: 'en', labelKey: 'lang.en' },
+  { code: 'de', labelKey: 'lang.de' },
+  { code: 'pt', labelKey: 'lang.pt' },
+  { code: 'es', labelKey: 'lang.es' },
+  { code: 'ru', labelKey: 'lang.ru' },
+  { code: 'az', labelKey: 'lang.az' },
+]
+
+function resolveLang(code: string): SiteLanguage {
+  const c = code.toLowerCase()
+  if (c.startsWith('tr')) return 'tr'
+  if (c.startsWith('en')) return 'en'
+  if (c.startsWith('de')) return 'de'
+  if (c.startsWith('pt')) return 'pt'
+  if (c.startsWith('es')) return 'es'
+  if (c.startsWith('ru')) return 'ru'
+  if (c.startsWith('az')) return 'az'
+  return 'tr'
 }
 
 export function LanguageSwitcher() {
@@ -22,7 +50,7 @@ export function LanguageSwitcher() {
     return () => document.removeEventListener('click', onDocClick)
   }, [open])
 
-  const pick = (lng: 'tr' | 'en') => {
+  const pick = (lng: SiteLanguage) => {
     changeSiteLanguage(lng)
     setOpen(false)
   }
@@ -40,37 +68,26 @@ export function LanguageSwitcher() {
           setOpen((v) => !v)
         }}
       >
-        <span className="lang-selector__label">
-          {active === 'tr' ? t('lang.currentTr') : t('lang.currentEn')}
-        </span>
+        <span className="lang-selector__label">{t(CURRENT_LABEL_KEY[active])}</span>
         <span className="lang-selector__chevron" aria-hidden="true">
           ▼
         </span>
       </button>
       {open ? (
         <ul className="lang-switcher__menu" role="listbox">
-          <li role="none">
-            <button
-              type="button"
-              role="option"
-              aria-selected={active === 'tr'}
-              className={`lang-switcher__option${active === 'tr' ? ' is-active' : ''}`}
-              onClick={() => pick('tr')}
-            >
-              {t('lang.tr')}
-            </button>
-          </li>
-          <li role="none">
-            <button
-              type="button"
-              role="option"
-              aria-selected={active === 'en'}
-              className={`lang-switcher__option${active === 'en' ? ' is-active' : ''}`}
-              onClick={() => pick('en')}
-            >
-              {t('lang.en')}
-            </button>
-          </li>
+          {LANG_OPTIONS.map(({ code, labelKey }) => (
+            <li key={code} role="none">
+              <button
+                type="button"
+                role="option"
+                aria-selected={active === code}
+                className={`lang-switcher__option${active === code ? ' is-active' : ''}`}
+                onClick={() => pick(code)}
+              >
+                {t(labelKey)}
+              </button>
+            </li>
+          ))}
         </ul>
       ) : null}
     </div>
