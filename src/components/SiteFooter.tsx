@@ -6,10 +6,18 @@ import {
   footerVideoEmbedSrc,
 } from '../data/content'
 import { YouTubeEmbed } from './YouTubeEmbed'
+import { products } from '../products/catalog'
 
 export function SiteFooter() {
   const { t } = useTranslation()
   const telHref = `tel:${contact.phone.replace(/\s/g, '')}`
+
+  const hrefByFooterName = (name: string) => {
+    const normalize = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '')
+    const target = normalize(name)
+    const entry = Object.values(products).find((p) => normalize(p.title) === target)
+    return entry ? `/${entry.slug}` : undefined
+  }
 
   return (
     <footer className="footer" id="contact">
@@ -37,7 +45,15 @@ export function SiteFooter() {
             <h4>{t('footer.products')}</h4>
             <ul className="product-list">
               {footerProducts.map((name) => (
-                <li key={name}>{name}</li>
+                <li key={name}>
+                  {hrefByFooterName(name) ? (
+                    <a href={hrefByFooterName(name)} className="contact-link">
+                      {name}
+                    </a>
+                  ) : (
+                    name
+                  )}
+                </li>
               ))}
             </ul>
           </div>

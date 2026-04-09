@@ -3,8 +3,9 @@ import { Route as RootRoute } from './routes/__root'
 import { Route as IndexRoute } from './routes/index'
 import { Route as CorporateRoute } from './routes/kurumsal'
 import { Route as ProductRoute } from './routes/$slug'
+import { Route as ContactRoute } from './routes/iletisim'
 
-const routeTree = RootRoute.addChildren([IndexRoute, CorporateRoute, ProductRoute])
+const routeTree = RootRoute.addChildren([IndexRoute, CorporateRoute, ContactRoute, ProductRoute])
 
 export const router = createRouter({
   routeTree,

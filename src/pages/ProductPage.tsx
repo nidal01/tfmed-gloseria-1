@@ -1,5 +1,6 @@
 import { useMemo, type ReactElement } from 'react'
 import { useParams } from '@tanstack/react-router'
+import { useTranslation } from 'react-i18next'
 import { InnerHero } from '../components/InnerHero'
 import { products } from '../products/catalog'
 
@@ -48,8 +49,12 @@ function StatIcon({ type }: { type: string }) {
 
 export function ProductPage() {
   const { slug } = useParams({ strict: false }) as { slug: string }
+  const { i18n } = useTranslation()
 
   const product = useMemo(() => products[slug], [slug])
+  const lang = i18n.language?.toLowerCase().startsWith('en') ? 'en' : 'tr'
+  const productI18n = lang === 'en' ? product?.i18n?.en : undefined
+  const formCardI18n = lang === 'en' ? product?.formCard?.i18n?.en : undefined
 
   if (!product) {
     return (
@@ -65,17 +70,22 @@ export function ProductPage() {
     )
   }
 
+  const title = productI18n?.title ?? product.title
+  const headline = productI18n?.headline ?? product.headline
+  const description = productI18n?.description ?? product.description
+  const ingredients = productI18n?.ingredients ?? product.ingredients
+
   return (
     <main>
-      <InnerHero title={product.title} videoSrc={product.heroVideoSrc} />
+      <InnerHero title={title} videoSrc={product.heroVideoSrc} />
 
       <section className="product">
         <div className="product__container">
           <div className="product__grid">
             <div className="product__copy">
-              <h2 className="product__headline">{product.headline}</h2>
-              <p className="product__text">{product.description}</p>
-              <p className="product__text product__text--muted">{product.ingredients}</p>
+              <h2 className="product__headline">{headline}</h2>
+              <p className="product__text">{description}</p>
+              <p className="product__text product__text--muted">{ingredients}</p>
             </div>
 
             <div className="product__media">
@@ -96,8 +106,8 @@ export function ProductPage() {
                   <StatIcon type={stat.icon || ''} />
                 </div>
                 <div className="product__statBody">
-                  <div className="product__statLabel">{stat.label}</div>
-                  <div className="product__statValue">{stat.value}</div>
+                  <div className="product__statLabel">{lang === 'en' ? stat.i18n?.en?.label ?? stat.label : stat.label}</div>
+                  <div className="product__statValue">{lang === 'en' ? stat.i18n?.en?.value ?? stat.value : stat.value}</div>
                 </div>
               </div>
             ))}
@@ -107,14 +117,22 @@ export function ProductPage() {
             <section className="product__formCard product__formCard--wide" aria-label="Form">
               <div className="product__formCardInner">
                 <div className="product__formCardLeft">
-                  <div className="product__formCardKicker">{product.formCard.leftTitle}</div>
-                  <div className="product__formCardSub">{product.formCard.leftSubtitle}</div>
+                  <div className="product__formCardKicker">
+                    {lang === 'en' ? formCardI18n?.leftTitle ?? product.formCard.leftTitle : product.formCard.leftTitle}
+                  </div>
+                  <div className="product__formCardSub">
+                    {lang === 'en' ? formCardI18n?.leftSubtitle ?? product.formCard.leftSubtitle : product.formCard.leftSubtitle}
+                  </div>
                 </div>
                 <div className="product__formCardRight">
-                  <div className="product__formCardRightTitle">{product.formCard.rightTitle}</div>
-                  <div className="product__formCardRightText">{product.formCard.rightSubtitle}</div>
+                  <div className="product__formCardRightTitle">
+                    {lang === 'en' ? formCardI18n?.rightTitle ?? product.formCard.rightTitle : product.formCard.rightTitle}
+                  </div>
+                  <div className="product__formCardRightText">
+                    {lang === 'en' ? formCardI18n?.rightSubtitle ?? product.formCard.rightSubtitle : product.formCard.rightSubtitle}
+                  </div>
                   <a className="product__formCardCta" href={product.formCard.ctaHref}>
-                    {product.formCard.ctaLabel}
+                    {lang === 'en' ? formCardI18n?.ctaLabel ?? product.formCard.ctaLabel : product.formCard.ctaLabel}
                   </a>
                 </div>
               </div>

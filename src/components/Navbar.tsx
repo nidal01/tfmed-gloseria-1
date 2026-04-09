@@ -94,6 +94,12 @@ export function Navbar() {
                     {t(item.labelKey)}
                   </Link>
                 </li>
+              ) : item.href === '#contact' ? (
+                <li key={item.href} className="nav-item">
+                  <Link to="/iletisim" className="nav-link">
+                    {t(item.labelKey)}
+                  </Link>
+                </li>
               ) : (
                 <li key={item.href} className="nav-item">
                   <a href={item.href} className="nav-link">
@@ -226,6 +232,12 @@ export function Navbar() {
                 ) : item.href === '#corporate' ? (
                   <li key={item.href} className="mobile-drawer__item">
                     <Link to="/kurumsal" className="mobile-drawer__link" onClick={closeMobile}>
+                      {t(item.labelKey)}
+                    </Link>
+                  </li>
+                ) : item.href === '#contact' ? (
+                  <li key={item.href} className="mobile-drawer__item">
+                    <Link to="/iletisim" className="mobile-drawer__link" onClick={closeMobile}>
                       {t(item.labelKey)}
                     </Link>
                   </li>

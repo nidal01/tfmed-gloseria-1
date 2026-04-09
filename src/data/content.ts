@@ -48,17 +48,16 @@ export const footerProducts = [
   'H Pause',
   'Rejuvenation',
   'Voluregen Hydrocalcium',
-  'VoluregenBio Stimulator',
+  'Voluregen Bio Stimulator',
 ] as const
 
 export const contact = {
   addressLines: [
-    'Halaskargazi Cad. No:38-66',
-    'Daire:46, Lotus AVM, Şişli',
-    'İstanbul, Türkiye',
+    '66 W FLAGLER ST',
+    'MIAMI, FL 33130, US',
   ],
-  phone: '+90 547 050 40 40',
-  email: 'info@tfmed.com.tr',
+  phone: '+1 (631) 792-2005',
+  email: 'info@gloseria.usa',
 } as const
 
 export const workshopCtaHref = '#'

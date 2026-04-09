@@ -40,23 +40,23 @@
       {
         "title": "VOLUREGEN SERİSİ",
         "links": [
-          { "href": "#urun-hydrocalcium", "label": "Hydrocalcium" },
-          { "href": "#urun-bio-stimulator", "label": "Bio Stimulator" }
+          { "href": "/voluregen-hydrocalcium", "label": "Hydrocalcium" },
+          { "href": "/voluregen-biostimulator", "label": "Bio Stimulator" }
         ]
       },
       {
         "title": "GENİTAL SERİSİ",
         "links": [
-          { "href": "#urun-g-white", "label": "G White" },
-          { "href": "#urun-h-pause", "label": "H Pause" },
-          { "href": "#urun-rejuvenation", "label": "Rejuvenation" }
+          { "href": "/g-white", "label": "G White" },
+          { "href": "/h-pause", "label": "H Pause" },
+          { "href": "/rejuvenation", "label": "Rejuvenation" }
         ]
       },
       {
         "title": "SHAPE SERİSİ",
         "links": [
-          { "href": "#urun-liposhape-body", "label": "Liposhape Body" },
-          { "href": "#urun-liposhape-face", "label": "Liposhape Face" }
+          { "href": "/liposhape-body", "label": "Liposhape Body" },
+          { "href": "/liposhape-face", "label": "Liposhape Face" }
         ]
       }
     ],
@@ -148,5 +148,36 @@
     "contact": "İLETİŞİM BİLGİLERİ",
     "location": "KONUM",
     "mapPlaceholder": "Harita Gösterimi"
+  },
+  "contactPage": {
+    "heading": "Bize Ulaşın",
+    "lede": "Kurumsal iletişim talepleriniz ve ürünlerimizle ilgili sorularınız için formu doldurun; size en kısa sürede dönüş yapalım.",
+    "infoAria": "İletişim bilgileri",
+    "info": {
+      "address": "Adres",
+      "phone": "Telefon",
+      "email": "E-posta"
+    },
+    "form": {
+      "aria": "İletişim formu",
+      "kicker": "İLETİŞİM",
+      "title": "Mesaj Gönderin",
+      "sub": "Bilgilerinizi bırakın. Şimdilik form gönderimi sadece doğrulama ve ekran içi bildirim üretir.",
+      "fields": {
+        "name": "Ad Soyad",
+        "email": "E-posta",
+        "phone": "Telefon (opsiyonel)",
+        "message": "Mesaj"
+      },
+      "submit": "Gönder",
+      "successTitle": "Mesajınız alındı",
+      "successText": "Teşekkürler. En kısa sürede sizinle iletişime geçeceğiz.",
+      "newMessage": "Yeni mesaj yaz",
+      "errors": {
+        "required": "Bu alan zorunludur.",
+        "email": "Lütfen geçerli bir e-posta adresi girin.",
+        "messageMin": "Mesaj en az 10 karakter olmalıdır."
+      }
+    }
   }
 }

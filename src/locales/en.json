@@ -40,23 +40,23 @@
       {
         "title": "VOLUREGEN SERIES",
         "links": [
-          { "href": "#urun-hydrocalcium", "label": "Hydrocalcium" },
-          { "href": "#urun-bio-stimulator", "label": "Bio Stimulator" }
+          { "href": "/voluregen-hydrocalcium", "label": "Hydrocalcium" },
+          { "href": "/voluregen-biostimulator", "label": "Bio Stimulator" }
         ]
       },
       {
         "title": "GENITAL SERIES",
         "links": [
-          { "href": "#urun-g-white", "label": "G White" },
-          { "href": "#urun-h-pause", "label": "H Pause" },
-          { "href": "#urun-rejuvenation", "label": "Rejuvenation" }
+          { "href": "/g-white", "label": "G White" },
+          { "href": "/h-pause", "label": "H Pause" },
+          { "href": "/rejuvenation", "label": "Rejuvenation" }
         ]
       },
       {
         "title": "SHAPE SERIES",
         "links": [
-          { "href": "#urun-liposhape-body", "label": "Liposhape Body" },
-          { "href": "#urun-liposhape-face", "label": "Liposhape Face" }
+          { "href": "/liposhape-body", "label": "Liposhape Body" },
+          { "href": "/liposhape-face", "label": "Liposhape Face" }
         ]
       }
     ],
@@ -148,5 +148,36 @@
     "contact": "CONTACT",
     "location": "LOCATION",
     "mapPlaceholder": "Map preview"
+  },
+  "contactPage": {
+    "heading": "Get in touch",
+    "lede": "For corporate inquiries and questions about our products, fill out the form and we’ll get back to you shortly.",
+    "infoAria": "Contact information",
+    "info": {
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email"
+    },
+    "form": {
+      "aria": "Contact form",
+      "kicker": "CONTACT",
+      "title": "Send a message",
+      "sub": "Leave your details. For now, the form only validates and shows an on-page notice (no backend submission).",
+      "fields": {
+        "name": "Full name",
+        "email": "Email",
+        "phone": "Phone (optional)",
+        "message": "Message"
+      },
+      "submit": "Send",
+      "successTitle": "Message received",
+      "successText": "Thank you. We’ll get back to you as soon as possible.",
+      "newMessage": "Write a new message",
+      "errors": {
+        "required": "This field is required.",
+        "email": "Please enter a valid email address.",
+        "messageMin": "Message must be at least 10 characters."
+      }
+    }
   }
 }
