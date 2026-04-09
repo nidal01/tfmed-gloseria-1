@@ -37,10 +37,21 @@ const HTML_LANG: Record<SiteLanguage, string> = {
   az: 'az',
 }
 
+function syncMetaDescription(content: string) {
+  let el = document.querySelector('meta[name="description"]') as HTMLMetaElement | null
+  if (!el) {
+    el = document.createElement('meta')
+    el.setAttribute('name', 'description')
+    document.head.appendChild(el)
+  }
+  el.setAttribute('content', content)
+}
+
 function syncDocument(lang: string) {
   const code = isSiteLanguage(lang) ? lang : 'en'
   document.documentElement.lang = HTML_LANG[code]
   document.title = i18n.t('meta.title')
+  syncMetaDescription(i18n.t('meta.description'))
 }
 
 void i18n
