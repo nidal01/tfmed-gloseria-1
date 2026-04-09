@@ -30,11 +30,11 @@
         "title": "CİLT SERİSİ",
         "links": [
           { "href": "/blue-shine", "label": "Blue Shine" },
-          { "href": "#urun-anti-aging-effect", "label": "Anti Aging Effect" },
-          { "href": "#urun-anti-hair-loss", "label": "Anti Hair Loss" },
-          { "href": "#urun-eye-shimmer", "label": "Eye Shimmer" },
-          { "href": "#urun-whitening-effect", "label": "Whitening Effect" },
-          { "href": "#urun-pure-dna", "label": "Pure Dna" }
+          { "href": "/anti-aging-effect", "label": "Anti Aging Effect" },
+          { "href": "/anti-hair-loss", "label": "Anti Hair Loss" },
+          { "href": "/eye-shimmer", "label": "Eye Shimmer" },
+          { "href": "/whitening-effect", "label": "Whitening Effect" },
+          { "href": "/pure-dna", "label": "Pure Dna" }
         ]
       },
       {
