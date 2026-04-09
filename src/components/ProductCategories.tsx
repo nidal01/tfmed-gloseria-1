@@ -1,3 +1,4 @@
+import { Link } from '@tanstack/react-router'
 import { useTranslation } from 'react-i18next'
 import { categoryCards } from '../data/content'
 
@@ -12,7 +13,7 @@ export function ProductCategories() {
         <div className="product-categories__layout">
           <div className="categories-grid categories-grid--top">
             {topCards.map((card) => (
-              <article key={card.id} className="category-card">
+              <Link key={card.id} to="/$slug" params={{ slug: card.productSlug }} className="category-card">
                 <img
                   src={card.image}
                   alt={t(`categories.${card.id}.alt`)}
@@ -22,12 +23,12 @@ export function ProductCategories() {
                   <h3 className="category-name">{t(`categories.${card.id}.name`)}</h3>
                   <span className="category-link">{t('categories.cta')}</span>
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
 
           <div className="product-categories__bottom">
-            <article key={bottomCard.id} className="category-card category-card--bottom">
+            <Link to="/$slug" params={{ slug: bottomCard.productSlug }} className="category-card category-card--bottom">
               <img
                 src={bottomCard.image}
                 alt={t(`categories.${bottomCard.id}.alt`)}
@@ -37,7 +38,7 @@ export function ProductCategories() {
                 <h3 className="category-name">{t(`categories.${bottomCard.id}.name`)}</h3>
                 <span className="category-link">{t('categories.cta')}</span>
               </div>
-            </article>
+            </Link>
 
             <div className="professional-text">
               <h2 className="professional-title">
@@ -45,7 +46,10 @@ export function ProductCategories() {
                 <br />
                 {t('professional.titleLine2')}
               </h2>
-              <p className="professional-desc">{t('professional.description')}</p>
+              <div className="professional-desc">
+                <p>{t('professional.paragraph1')}</p>
+                <p>{t('professional.paragraph2')}</p>
+              </div>
             </div>
           </div>
         </div>

@@ -104,7 +104,11 @@ export function ContactPage() {
             </div>
 
             <div className="contact__right">
-              <section className="contact__formCard" aria-label={t('contactPage.form.aria')}>
+              <section
+                className="contact__formCard"
+                id="contact-form"
+                aria-label={t('contactPage.form.aria')}
+              >
                 <div className="contact__formCardInner">
                   <header className="contact__formHeader">
                     <p className="contact__formKicker">{t('contactPage.form.kicker')}</p>

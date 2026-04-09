@@ -11,7 +11,7 @@
     "closeMenu": "Close menu",
     "mobileMenuAria": "Mobile menu",
     "home": "HOME",
-    "corporate": "CORPORATE",
+    "corporate": "ABOUT",
     "products": "PRODUCTS +",
     "representatives": "REPRESENTATIVES",
     "contact": "CONTACT"
@@ -91,10 +91,11 @@
   "professional": {
     "titleLine1": "Developed for",
     "titleLine2": "Professionals",
-    "description": "Gloseria offers advanced technological active ingredients developed according to the skin’s biological needs. Each product is designed with professional protocols that integrate into clinical practice."
+    "paragraph1": "Gloseria offers advanced technology actives developed according to the biological needs of the skin.",
+    "paragraph2": "Each product is designed with professional protocols that can be integrated into clinical applications."
   },
   "about": {
-    "headline": "Gloseria provides professional products developed for the needs of dermatologists and medical aesthetic physicians."
+    "headline": "Gloseria offers professional products developed for the needs of dermatologists and aesthetic medicine physicians."
   },
   "features": {
     "aria": "Highlights",
@@ -102,52 +103,100 @@
       {
         "number": "01",
         "title": "Molecular Precision",
-        "description": "Our products are developed through advanced biotechnological processes that deliver active ingredients to target tissue with maximum stability. Each vial is a concentrated engineering work that optimizes clinical outcomes."
+        "description": "Our products are developed through advanced biotechnological processes that ensure active components reach target tissue with maximum stability. Each vial is a concentrated engineering marvel that optimizes clinical results."
       },
       {
         "number": "02",
         "title": "Synergistic Protocols",
-        "description": "Gloseria products are not isolated solutions but intelligent systems that can be combined. From pigmentation care to bio-stimulation, they offer a flexible range of applications that fit your clinical protocols."
+        "description": "Gloseria products are not just individual solutions but intelligent systems that can be combined with each other. From spot treatment to bio-stimulation, we offer a flexible range of applications that can be integrated into your clinical protocols."
       },
       {
         "number": "03",
         "title": "Biocompatible and Safe",
-        "description": "We prioritize safety—the most sensitive criterion for dermatologists. The Gloseria line consists of professional formulations fully compatible with skin tissue, minimizing inflammation risk and meeting the highest sterilization standards."
+        "description": "We prioritize safety, the most sensitive criterion of dermatologists. The Gloseria series consists of professional contents that are fully compatible with skin tissue, minimize inflammation risk, and maintain the highest sterilization standards."
       },
       {
         "number": "04",
         "title": "Evidence-Based Aesthetics",
-        "description": "We trust clinical data, not marketing claims. Gloseria follows the latest literature in medical aesthetics to deliver predictable outcomes that meet physicians’ expectations."
+        "description": "We believe in clinical data, not marketing promises. Gloseria follows the most current literature in aesthetic medicine, delivering \"predictable\" results that meet physicians' expectations."
       }
     ]
   },
   "workshop": {
     "title": "Workshop",
     "videoTitle": "Workshop section background video",
-    "intro": "Gloseria hosts hands-on, small-group workshops in multiple cities, exclusively for dermatologists and medical aesthetic physicians.",
-    "paragraph1": "At these sessions, the scientific foundations of advanced formulations, clinical protocols, and high-performance techniques are taught directly. Live demonstrations and case discussions turn theory into top-tier clinical experience.",
-    "paragraph2": "Gloseria workshops are designed to deepen professionals’ expertise and elevate clinical standards to the next level.",
-    "cta": "EXPLORE WORKSHOPS →"
+    "intro": "Gloseria organizes special, practical and limited participation workshops for dermatologists and aesthetic medicine physicians in different cities.",
+    "paragraph1": "In these exclusive meetings, the scientific foundations of advanced formulations, clinical protocols and high-success application techniques are transferred one-on-one. Through live applications and case sharing, theoretical knowledge is transformed into top-level clinical experience.",
+    "paragraph2": "Gloseria workshops are designed to deepen professionals' knowledge and elevate clinical standards to the next level.",
+    "cta": "DISCOVER WORKSHOPS →"
   },
   "events": {
     "title": "News & Events",
     "national": {
-      "title": "8th National Medical Aesthetic Congress",
-      "imageAlt": "8th National Medical Aesthetic Congress",
-      "description": "Gloseria joined one of the field’s most prestigious events, the 8th National Medical Aesthetic Congress, presenting its innovative portfolio and scientific approach to industry professionals."
+      "title": "8th International Aesthetic Medicine Congress",
+      "imageAlt": "8th International Aesthetic Medicine Congress",
+      "description": "Gloseria participated in the 8th International Aesthetic Medicine Congress, one of the most prestigious organizations in the field, presenting its innovative product portfolio and scientific approach to industry professionals."
     },
     "international": {
       "title": "8th International Medical Aesthetic Congress",
       "imageAlt": "8th International Medical Aesthetic Congress",
-      "description": "Gloseria participated in the 8th International Medical Aesthetic Congress—among the most prestigious gatherings in medical aesthetics—sharing its innovative product range and scientific vision with professionals."
+      "description": "Gloseria participated in the 8th International Medical Aesthetic Congress, one of the most prestigious organizations in the field, presenting its innovative product portfolio and scientific approach to industry professionals."
     }
   },
   "footer": {
     "videoTitle": "Footer section background video",
     "products": "OUR PRODUCTS",
-    "contact": "CONTACT",
-    "location": "LOCATION",
-    "mapPlaceholder": "Map preview"
+    "contact": "CONTACT"
+  },
+  "corporatePage": {
+    "heading": "An Approach Shaped by Science",
+    "intro": "Gloseria is a brand that develops products for professional use in dermatology and aesthetic medicine. Our products are designed with a scientific formulation approach that puts the skin's biological structure at the center. Our goal is to develop solutions that physicians can safely use in their clinical applications, provide high efficacy and deliver sustainable results.",
+    "missionTitle": "Our Mission",
+    "missionText": "To develop solutions for dermatologists and aesthetic medicine physicians based on scientific foundations, with high clinical accuracy and supporting patient satisfaction.",
+    "visionTitle": "Our Vision",
+    "visionText": "To be a reference brand in the field, nationally and internationally, with its innovative approach, prestigious brand position and clinical success-focused products.",
+    "aboutImageAlt": "Gloseria corporate event",
+    "splitParagraph": "Gloseria is a brand that does not limit quality only to formulation in the dermo-cosmetic field; it embraces high standards in all stages from production processes to clinical feedback. Our product development approach aims to meet efficacy, safety and professional use requirements at the same point.",
+    "valuesHeading": "Our Values",
+    "values": [
+      {
+        "title": "Scientific Credibility",
+        "text": "All our products are developed in line with current scientific data and clinical feedback."
+      },
+      {
+        "title": "Professional Focus",
+        "text": "Gloseria provides only solutions suitable for professional use requirements."
+      },
+      {
+        "title": "High Efficacy",
+        "text": "Our formulations are designed to provide maximum clinical performance with targeted active ingredients."
+      },
+      {
+        "title": "Continuous Improvement",
+        "text": "Our product portfolio is continuously updated in line with innovations in dermatology and aesthetic medicine."
+      },
+      {
+        "title": "Education and Sharing",
+        "text": "We support knowledge sharing and professional development through practical workshops and clinical meetings."
+      }
+    ],
+    "closingParagraph": "This holistic perspective makes Gloseria a sustainable and reliable solution partner in clinical applications.",
+    "workshop": {
+      "aria": "Workshop",
+      "title": "Part of Professional Experience",
+      "text": "Gloseria brings together clinical knowledge and experience through practical workshops held in different cities. These organizations are designed to increase physicians' application competence and raise clinical standards.",
+      "cta": "DISCOVER WORKSHOPS"
+    },
+    "futureHeading": "Looking to the Future",
+    "futureLead": "Gloseria continues to provide solutions powered by science by bringing together quality, trust and prestige in the field of medical aesthetics."
+  },
+  "productPage": {
+    "notFoundHero": "Product not found",
+    "notFoundTitle": "Product not found",
+    "notFoundText": "This product page may not be available yet.",
+    "statsAria": "Product details",
+    "formAria": "Form",
+    "imagePlaceholder": "Product image"
   },
   "contactPage": {
     "heading": "Get in touch",

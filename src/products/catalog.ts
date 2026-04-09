@@ -47,9 +47,19 @@ export const products: Record<string, Product> = {
     ingredients:
       'Hyaluronic Acid, Niacinamide, Glutatyon, Tranexamic Acid ve Somon DNA kombinasyonu ile cilt canlılığının artırılmasına, elastik yapının güçlendirilmesine ve ince kırışıklık görünümünün azaltılmasına yardımcı olur.',
     stats: [
-      { label: 'Seans Süresi', value: '21 Gün Arayla 2 Seans', icon: 'calendar' },
-      { label: 'Satış Formu', value: '10 ml 5 Flakon', icon: 'box' },
-      { label: 'Ph', value: '6.5 - 7.5', icon: 'droplet' },
+      {
+        label: 'Seans Süresi',
+        value: '21 Gün Arayla 2 Seans',
+        icon: 'calendar',
+        i18n: { en: { label: 'Session Duration', value: '4 Sessions at 7 Day Intervals' } },
+      },
+      {
+        label: 'Satış Formu',
+        value: '10 ml 5 Flakon',
+        icon: 'box',
+        i18n: { en: { label: 'Sales Form', value: '10 ml 5 Vials' } },
+      },
+      { label: 'Ph', value: '6.5 - 7.5', icon: 'droplet', i18n: { en: { label: 'pH' } } },
     ],
     heroVideoSrc:
       'https://www.youtube.com/embed/LcROQJ25utw?autoplay=1&mute=1&loop=1&playlist=LcROQJ25utw&controls=0&showinfo=0',
@@ -60,7 +70,25 @@ export const products: Record<string, Product> = {
       rightTitle: 'Blue Shine Uygulama',
       rightSubtitle: 'Uygulama videosunu e-posta olarak iletebiliriz.',
       ctaLabel: 'Formu Doldur',
-      ctaHref: '#',
+      ctaHref: '/iletisim#contact-form',
+      i18n: {
+        en: {
+          leftTitle: "SKIN'S NEW BIOSTIMULATION",
+          leftSubtitle: 'Concentrated, Deep & Homogeneous Distribution',
+          rightTitle: 'Blue Shine Application',
+          rightSubtitle: 'We can send the application video via email.',
+          ctaLabel: 'Fill out the form',
+        },
+      },
+    },
+    i18n: {
+      en: {
+        headline: 'Cellular Renewal & Radiance',
+        description:
+          'Blue Shine is an intensive skin revitalization solution that supports targeted biological activation in the dermal and epidermal layers.',
+        ingredients:
+          'With a combination of Hyaluronic Acid, Niacinamide, Glutathione, Tranexamic Acid and Salmon DNA, it helps increase skin vitality, strengthen elastic structure and reduce the appearance of fine wrinkles.',
+      },
     },
   },
 
@@ -73,9 +101,19 @@ export const products: Record<string, Product> = {
     ingredients:
       'Aminoasitler, vitaminler ve peptid kompleksleri sayesinde oksidatif stresi azaltır, ince kırışıklıkların görünümünü hafifletir ve cildin daha pürüzsüz bir doku kazanmasına yardımcı olur.',
     stats: [
-      { label: 'Seans Süresi', value: '21 Gün Arayla 3 Seans', icon: 'calendar' },
-      { label: 'Satış Formu', value: '10 ml 5 Flakon', icon: 'box' },
-      { label: 'Ph', value: '6.5 - 7.5', icon: 'droplet' },
+      {
+        label: 'Seans Süresi',
+        value: '21 Gün Arayla 3 Seans',
+        icon: 'calendar',
+        i18n: { en: { label: 'Session Duration', value: '3 Sessions at 21 Day Intervals' } },
+      },
+      {
+        label: 'Satış Formu',
+        value: '10 ml 5 Flakon',
+        icon: 'box',
+        i18n: { en: { label: 'Sales Form', value: '10 ml 5 Vials' } },
+      },
+      { label: 'Ph', value: '6.5 - 7.5', icon: 'droplet', i18n: { en: { label: 'pH' } } },
     ],
     heroVideoSrc:
       'https://www.youtube.com/embed/9MQTIzmerOY?autoplay=1&mute=1&loop=1&playlist=9MQTIzmerOY&controls=0&showinfo=0',
@@ -86,7 +124,25 @@ export const products: Record<string, Product> = {
       rightTitle: 'Anti Aging Effect Uygulama',
       rightSubtitle: 'Uygulama videosunu e-posta olarak iletebiliriz.',
       ctaLabel: 'Formu Doldur',
-      ctaHref: '#',
+      ctaHref: '/iletisim#contact-form',
+      i18n: {
+        en: {
+          leftTitle: 'ANTI-AGING NEW GENERATION RENEWAL PROTOCOL SOLUTION',
+          leftSubtitle: 'Vibrant & Elastic Skin',
+          rightTitle: 'Anti Aging Effect Application',
+          rightSubtitle: 'We can send the application video via email.',
+          ctaLabel: 'Fill out the form',
+        },
+      },
+    },
+    i18n: {
+      en: {
+        headline: 'Antioxidant Protection & Skin Renewal',
+        description:
+          "Anti Aging new generation renewal protocol solution is formulated to restore the skin's vitality and elasticity that diminishes over time.",
+        ingredients:
+          'Through amino acids, vitamins and peptide complexes, it reduces oxidative stress, softens the appearance of fine lines and helps the skin gain a smoother texture.',
+      },
     },
   },
 
@@ -99,9 +155,19 @@ export const products: Record<string, Product> = {
     ingredients:
       'Biotin, vitaminler ve aminoasitler ile saç foliküllerinin beslenmesini artırır, saç tellerinin güçlenmesine ve hacim kazanmasına katkı sağlar.',
     stats: [
-      { label: 'Seans Süresi', value: '21 Gün Arayla 3-6 Seans', icon: 'calendar' },
-      { label: 'Satış Formu', value: '10 ml 5 Flakon', icon: 'box' },
-      { label: 'Ph', value: '6.5 - 7.5', icon: 'droplet' },
+      {
+        label: 'Seans Süresi',
+        value: '21 Gün Arayla 3-6 Seans',
+        icon: 'calendar',
+        i18n: { en: { label: 'Session Duration', value: '3-6 Sessions at 21 Day Intervals' } },
+      },
+      {
+        label: 'Satış Formu',
+        value: '10 ml 5 Flakon',
+        icon: 'box',
+        i18n: { en: { label: 'Sales Form', value: '10 ml 5 Vials' } },
+      },
+      { label: 'Ph', value: '6.5 - 7.5', icon: 'droplet', i18n: { en: { label: 'pH' } } },
     ],
     heroVideoSrc:
       'https://www.youtube.com/embed/FOG-pypCDYU?autoplay=1&mute=1&loop=1&playlist=FOG-pypCDYU&controls=0&showinfo=0',
@@ -112,7 +178,25 @@ export const products: Record<string, Product> = {
       rightTitle: 'Anti Hair Loss Uygulama',
       rightSubtitle: 'Uygulama videosunu e-posta olarak iletebiliriz.',
       ctaLabel: 'Formu Doldur',
-      ctaHref: '#',
+      ctaHref: '/iletisim#contact-form',
+      i18n: {
+        en: {
+          leftTitle: "HAIR'S NEW BIOSTIMULATION",
+          leftSubtitle: 'Concentrated, Deep & Homogeneous Distribution',
+          rightTitle: 'Anti Hair Loss Application',
+          rightSubtitle: 'We can send the application video via email.',
+          ctaLabel: 'Fill out the form',
+        },
+      },
+    },
+    i18n: {
+      en: {
+        headline: 'Hair Loss Control & Follicle Strengthening',
+        description:
+          'Anti Hair Loss new generation renewal protocol solution helps reduce hair loss by supporting the biological activity of hair roots.',
+        ingredients:
+          'With biotin, vitamins and amino acids, it increases the nourishment of hair follicles, contributing to stronger hair strands and improved volume.',
+      },
     },
   },
 
@@ -125,9 +209,19 @@ export const products: Record<string, Product> = {
     ingredients:
       'Hassas göz bölgesine uygun formülasyonu sayesinde, cildin canlılığını artırır ve parlak bir görünüm sağlar. Yaşlanmış bakışları gençleştirerek, gözleri daha açık ve dinç gösterir.',
     stats: [
-      { label: 'Seans Süresi', value: '21 Gün Arayla 3 Seans', icon: 'calendar' },
-      { label: 'Satış Formu', value: '5 ml 5 Flakon', icon: 'box' },
-      { label: 'Ph', value: '6.5 - 7.5', icon: 'droplet' },
+      {
+        label: 'Seans Süresi',
+        value: '21 Gün Arayla 3 Seans',
+        icon: 'calendar',
+        i18n: { en: { label: 'Session Duration', value: '3 Sessions at 21 Day Intervals' } },
+      },
+      {
+        label: 'Satış Formu',
+        value: '5 ml 5 Flakon',
+        icon: 'box',
+        i18n: { en: { label: 'Sales Form', value: '5 ml 5 Vials' } },
+      },
+      { label: 'Ph', value: '6.5 - 7.5', icon: 'droplet', i18n: { en: { label: 'pH' } } },
     ],
     heroVideoSrc:
       'https://www.youtube.com/embed/_8bKi-dZBV0?autoplay=1&mute=1&loop=1&playlist=_8bKi-dZBV0&controls=0&showinfo=0',
@@ -138,7 +232,25 @@ export const products: Record<string, Product> = {
       rightTitle: 'Eye Shimmer Uygulama',
       rightSubtitle: 'Uygulama videosunu e-posta olarak iletebiliriz.',
       ctaLabel: 'Formu Doldur',
-      ctaHref: '#',
+      ctaHref: '/iletisim#contact-form',
+      i18n: {
+        en: {
+          leftTitle: 'THE SECRET OF EYE AREA RENEWAL',
+          leftSubtitle: 'Gentle, Effective and Natural Results',
+          rightTitle: 'Eye Shimmer Application',
+          rightSubtitle: 'We can send the application video via email.',
+          ctaLabel: 'Fill out the form',
+        },
+      },
+    },
+    i18n: {
+      en: {
+        headline: 'Eye Area Brightness & Vitality Effect',
+        description:
+          'Eye Shimmer new generation renewal protocol solution is specially formulated to reduce fine lines around the eyes and increase skin firmness.',
+        ingredients:
+          'With moisturizing complex and antioxidants, it helps the eye area skin look brighter, fresher and smoother. It reduces signs of aging.',
+      },
     },
   },
 
@@ -151,9 +263,19 @@ export const products: Record<string, Product> = {
     ingredients:
       'Melanin üretimini dengeleyen formülasyonu ile koyu lekeleri hafifletir ve cildin doğal parlaklığını ortaya çıkarır. Aydınlık ve eşit bir cilt tonu elde edilmesini sağlar.',
     stats: [
-      { label: 'Seans Süresi', value: '21 Gün Arayla 3 Seans', icon: 'calendar' },
-      { label: 'Satış Formu', value: '10 ml 5 Flakon', icon: 'box' },
-      { label: 'Ph', value: '6.5 - 7.5', icon: 'droplet' },
+      {
+        label: 'Seans Süresi',
+        value: '21 Gün Arayla 3 Seans',
+        icon: 'calendar',
+        i18n: { en: { label: 'Session Duration', value: '3 Sessions at 21 Day Intervals' } },
+      },
+      {
+        label: 'Satış Formu',
+        value: '10 ml 5 Flakon',
+        icon: 'box',
+        i18n: { en: { label: 'Sales Form', value: '10 ml 5 Vials' } },
+      },
+      { label: 'Ph', value: '6.5 - 7.5', icon: 'droplet', i18n: { en: { label: 'pH' } } },
     ],
     heroVideoSrc:
       'https://www.youtube.com/embed/b4sOQlknp7o?autoplay=1&mute=1&loop=1&playlist=b4sOQlknp7o&controls=0&showinfo=0',
@@ -164,7 +286,25 @@ export const products: Record<string, Product> = {
       rightTitle: 'Whitening Effect Uygulama',
       rightSubtitle: 'Uygulama videosunu e-posta olarak iletebiliriz.',
       ctaLabel: 'Formu Doldur',
-      ctaHref: '#',
+      ctaHref: '/iletisim#contact-form',
+      i18n: {
+        en: {
+          leftTitle: 'RADIANT SKIN LUMINOUS GLOW',
+          leftSubtitle: 'Rich, Deep & Fast Results',
+          rightTitle: 'Whitening Effect Application',
+          rightSubtitle: 'We can send the application video via email.',
+          ctaLabel: 'Fill out the form',
+        },
+      },
+    },
+    i18n: {
+      en: {
+        headline: 'Skin Brightening & Luminous Radiance',
+        description:
+          'Whitening Effect new generation renewal protocol solution is formulated to effectively reduce dark spots, lentigines and hyperpigmentation on skin.',
+        ingredients:
+          "With L-ascorbic acid and plant extracts, it restores the skin's natural brightness. It improves pores, complexion and elasticity, providing a younger and brighter appearance.",
+      },
     },
   },
 
@@ -177,9 +317,19 @@ export const products: Record<string, Product> = {
     ingredients:
       'Hücresel düzeyde cilt onarım mekanizmalarını harekete geçirerek, yaşlanma işaretlerini azaltır ve doğal ışıltıyı geri kazandırır. Daha genç, sağlıklı ve parlak bir cilt görünümü elde edilmesini sağlar.',
     stats: [
-      { label: 'Seans Süresi', value: '21 Gün Arayla 3 Seans', icon: 'calendar' },
-      { label: 'Satış Formu', value: '5 ml 5 Flakon', icon: 'box' },
-      { label: 'Ph', value: '6.5 - 7.5', icon: 'droplet' },
+      {
+        label: 'Seans Süresi',
+        value: '21 Gün Arayla 3 Seans',
+        icon: 'calendar',
+        i18n: { en: { label: 'Session Duration', value: '3 Sessions at 21 Day Intervals' } },
+      },
+      {
+        label: 'Satış Formu',
+        value: '5 ml 5 Flakon',
+        icon: 'box',
+        i18n: { en: { label: 'Sales Form', value: '5 ml 5 Vials' } },
+      },
+      { label: 'Ph', value: '6.5 - 7.5', icon: 'droplet', i18n: { en: { label: 'pH' } } },
     ],
     heroVideoSrc:
       'https://www.youtube.com/embed/pgj-B4C71SU?autoplay=1&mute=1&loop=1&playlist=pgj-B4C71SU&controls=0&showinfo=0',
@@ -190,7 +340,25 @@ export const products: Record<string, Product> = {
       rightTitle: 'Pure DNA Uygulama',
       rightSubtitle: 'Uygulama videosunu e-posta olarak iletebiliriz.',
       ctaLabel: 'Formu Doldur',
-      ctaHref: '#',
+      ctaHref: '/iletisim#contact-form',
+      i18n: {
+        en: {
+          leftTitle: "SKIN'S GENETIC POTENTIAL",
+          leftSubtitle: 'Natural, Powerful & Sustainable Results',
+          rightTitle: 'Pure DNA Application',
+          rightSubtitle: 'We can send the application video via email.',
+          ctaLabel: 'Fill out the form',
+        },
+      },
+    },
+    i18n: {
+      en: {
+        headline: 'DNA-Supported Skin Renewal & Genetic Enhancement',
+        description:
+          'Pure DNA new generation renewal protocol solution supports skin renewal and rejuvenation by targeting cellular DNA.',
+        ingredients:
+          'With natural nucleotides and renewal factors, it increases the biological activity of skin, slows the aging process and provides a healthier, fresher appearance.',
+      },
     },
   },
 
@@ -203,9 +371,19 @@ export const products: Record<string, Product> = {
     ingredients:
       'Kaybolan cilt elastikiyetini ve ışıltılığını geri kazandırır. Kırışıklıkları doldurarak, cildin yaşlanmış görünümünü giderir ve daha dolgun, gençleştirilmiş bir yüz görünümü oluşturur.',
     stats: [
-      { label: 'Seans Süresi', value: '1 Seans', icon: 'calendar' },
-      { label: 'Satış Formu', value: '5 ml 1 Flakon', icon: 'box' },
-      { label: 'Ph', value: '6.5 - 7.5', icon: 'droplet' },
+      {
+        label: 'Seans Süresi',
+        value: '1 Seans',
+        icon: 'calendar',
+        i18n: { en: { label: 'Session Duration', value: '1 Sessions' } },
+      },
+      {
+        label: 'Satış Formu',
+        value: '5 ml 1 Flakon',
+        icon: 'box',
+        i18n: { en: { label: 'Sales Form', value: '5 ml 1 Vials' } },
+      },
+      { label: 'Ph', value: '6.5 - 7.5', icon: 'droplet', i18n: { en: { label: 'pH' } } },
     ],
     heroVideoSrc: 'https://www.youtube.com/embed/C2Xs8P_zjnQ?autoplay=1&mute=1&loop=1&playlist=C2Xs8P_zjnQ&controls=0&showinfo=0',
     imageSrc: '/images/gloseria-voluregen-hydrocalcium.webp',
@@ -215,7 +393,25 @@ export const products: Record<string, Product> = {
       rightTitle: 'Voluregen Hydrocalcium Uygulama',
       rightSubtitle: 'Uygulama videosunu e-posta olarak iletebiliriz.',
       ctaLabel: 'Formu Doldur',
-      ctaHref: '#',
+      ctaHref: '/iletisim#contact-form',
+      i18n: {
+        en: {
+          leftTitle: 'SKIN VOLUME INCREASE & FILLING',
+          leftSubtitle: 'Natural, Structured & Youthful Appearance',
+          rightTitle: 'Voluregen Hydrocalcium Application',
+          rightSubtitle: 'We can send the application video via email.',
+          ctaLabel: 'Fill out the form',
+        },
+      },
+    },
+    i18n: {
+      en: {
+        headline: 'Volume Enhancement & Deep Skin Filling',
+        description:
+          'Voluregen Hydrocalcium new generation renewal protocol solution provides volume enhancement and deep filling effect through its calcium and hyaluronic acid complex.',
+        ingredients:
+          'It restores lost skin elasticity and radiance. By filling wrinkles, it eliminates aged skin appearance and creates a fuller, more rejuvenated facial appearance.',
+      },
     },
   },
 
@@ -228,9 +424,19 @@ export const products: Record<string, Product> = {
     ingredients:
       'Cildin kendi yenileme mekanizmalarını harekete geçirerek, derindedeki yaşlanma işaretlerini giderir. Cilt dokusunu güçlendirerek, uzun süreli gençleştirme ve doğal bir parlaklanma etkisi meydana getirir.',
     stats: [
-      { label: 'Seans Süresi', value: '21 Gün Arayla 2 Seans', icon: 'calendar' },
-      { label: 'Satış Formu', value: '5 ml 2 Flakon', icon: 'box' },
-      { label: 'Ph', value: '6.5 - 7.5', icon: 'droplet' },
+      {
+        label: 'Seans Süresi',
+        value: '21 Gün Arayla 2 Seans',
+        icon: 'calendar',
+        i18n: { en: { label: 'Session Duration', value: '2 Sessions at 21 Day Intervals' } },
+      },
+      {
+        label: 'Satış Formu',
+        value: '5 ml 2 Flakon',
+        icon: 'box',
+        i18n: { en: { label: 'Sales Form', value: '5 ml 2 Vials' } },
+      },
+      { label: 'Ph', value: '6.5 - 7.5', icon: 'droplet', i18n: { en: { label: 'pH' } } },
     ],
     heroVideoSrc: 'https://www.youtube.com/embed/EKBhttmbLjA?autoplay=1&mute=1&loop=1&playlist=EKBhttmbLjA&controls=0&showinfo=0',
     imageSrc: '/images/gloseria-voluregen-biostimulator.webp',
@@ -240,7 +446,25 @@ export const products: Record<string, Product> = {
       rightTitle: 'Voluregen Bio Stimulator Uygulama',
       rightSubtitle: 'Uygulama videosunu e-posta olarak iletebiliriz.',
       ctaLabel: 'Formu Doldur',
-      ctaHref: '#',
+      ctaHref: '/iletisim#contact-form',
+      i18n: {
+        en: {
+          leftTitle: 'BIOLOGICAL STIMULATION & COLLAGEN INDUCTION',
+          leftSubtitle: 'Natural Rejuvenation & Deep Skin Renewal',
+          rightTitle: 'Voluregen Bio Stimulator Application',
+          rightSubtitle: 'We can send the application video via email.',
+          ctaLabel: 'Fill out the form',
+        },
+      },
+    },
+    i18n: {
+      en: {
+        headline: 'Biological Stimulation & Collagen Production Enhancement',
+        description:
+          'Voluregen Bio Stimulator new generation renewal protocol formulation naturally stimulates collagen and elastin production by promoting fibroblast activation.',
+        ingredients:
+          "By activating the skin's own renewal mechanisms, it eliminates deep aging signs. Strengthening skin tissue, it creates long-lasting rejuvenation and natural radiance effect.",
+      },
     },
   },
 
@@ -276,7 +500,7 @@ export const products: Record<string, Product> = {
       rightTitle: 'G White Uygulama',
       rightSubtitle: 'Uygulama videosunu e-posta olarak iletebiliriz.',
       ctaLabel: 'Formu Doldur',
-      ctaHref: '#',
+      ctaHref: '/iletisim#contact-form',
       i18n: {
         en: {
           leftTitle: 'INTIMATE AREA BRIGHTNESS',
@@ -330,7 +554,7 @@ export const products: Record<string, Product> = {
       rightTitle: 'H Pause Uygulama',
       rightSubtitle: 'Uygulama videosunu e-posta olarak iletebiliriz.',
       ctaLabel: 'Formu Doldur',
-      ctaHref: '#',
+      ctaHref: '/iletisim#contact-form',
       i18n: {
         en: {
           leftTitle: 'NEW LIFE AFTER MENOPAUSE',
@@ -384,7 +608,7 @@ export const products: Record<string, Product> = {
       rightTitle: 'rejuvenation Uygulama',
       rightSubtitle: 'Uygulama videosunu e-posta olarak iletebiliriz.',
       ctaLabel: 'Formu Doldur',
-      ctaHref: '#',
+      ctaHref: '/iletisim#contact-form',
       i18n: {
         en: {
           leftTitle: 'CELLULITE & SKIN TIGHTENING POTENTIAL',
@@ -426,7 +650,7 @@ export const products: Record<string, Product> = {
       rightTitle: 'Liposhape Body Uygulama',
       rightSubtitle: 'Uygulama videosunu e-posta olarak iletebiliriz.',
       ctaLabel: 'Formu Doldur',
-      ctaHref: '#',
+      ctaHref: '/iletisim#contact-form',
       i18n: {
         en: {
           leftTitle: 'BODY CONTOURING POTENTIAL',
@@ -468,7 +692,7 @@ export const products: Record<string, Product> = {
       rightTitle: 'Liposhape Face Uygulama',
       rightSubtitle: 'Uygulama videosunu e-posta olarak iletebiliriz.',
       ctaLabel: 'Formu Doldur',
-      ctaHref: '#',
+      ctaHref: '/iletisim#contact-form',
       i18n: {
         en: {
           leftTitle: 'FACIAL SHAPE & TIGHTNESS ACHIEVED',

@@ -1,3 +1,4 @@
+import { Link } from '@tanstack/react-router'
 import { useTranslation } from 'react-i18next'
 import {
   brandLogoSrc,
@@ -29,7 +30,7 @@ export function SiteFooter() {
         />
       </div>
       <div className="footer-container">
-        <a href="#home" className="footer-logo">
+        <Link to="/" className="footer-logo">
           <img
             src={brandLogoSrc}
             alt={t('brand.wordmark')}
@@ -38,7 +39,7 @@ export function SiteFooter() {
             height={70}
             decoding="async"
           />
-        </a>
+        </Link>
 
         <div className="footer-content">
           <div className="footer-column">
@@ -91,11 +92,6 @@ export function SiteFooter() {
                 </a>
               </p>
             </div>
-          </div>
-
-          <div className="footer-column">
-            <h4>{t('footer.location')}</h4>
-            <div className="map-placeholder">{t('footer.mapPlaceholder')}</div>
           </div>
         </div>
       </div>

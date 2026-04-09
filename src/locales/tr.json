@@ -91,7 +91,8 @@
   "professional": {
     "titleLine1": "Profesyoneller İçin",
     "titleLine2": "Geliştirildi",
-    "description": "Gloseria, cildin biyolojik ihtiyaçlarına göre geliştirilmiş ileri teknoloji aktif bileşenler sunar. Her ürün, klinik uygulamalara entegre edilebilecek profesyonel protokollerle tasarlanmıştır."
+    "paragraph1": "Gloseria, cildin biyolojik ihtiyaçlarına göre geliştirilmiş ileri teknoloji aktif bileşenler sunar.",
+    "paragraph2": "Her ürün, klinik uygulamalara entegre edilebilecek profesyonel protokollerle tasarlanmıştır."
   },
   "about": {
     "headline": "Gloseria, dermatologların ve medikal estetik hekimlerinin ihtiyaçları için geliştirilmiş profesyonel ürünler sunar."
@@ -145,9 +146,57 @@
   "footer": {
     "videoTitle": "Alt bilgi bölümü arka plan videosu",
     "products": "ÜRÜNLERİMİZ",
-    "contact": "İLETİŞİM BİLGİLERİ",
-    "location": "KONUM",
-    "mapPlaceholder": "Harita Gösterimi"
+    "contact": "İLETİŞİM BİLGİLERİ"
+  },
+  "corporatePage": {
+    "heading": "Bilimle Şekillenen Yaklaşım",
+    "intro": "Gloseria, dermatoloji ve medikal estetik alanında profesyonel kullanıma yönelik ürünler geliştiren bir markadır. Ürünlerimiz, cildin biyolojik yapısını merkeze alan bilimsel formülasyon anlayışıyla tasarlanır. Hedefimiz; hekimlerin klinik uygulamalarında güvenle kullanabileceği, yüksek etkinlik sunan ve sürdürülebilir sonuçlar sağlayan çözümler üretmektir.",
+    "missionTitle": "Misyonumuz",
+    "missionText": "Dermatologlar ve medikal estetik hekimleri için; bilimsel temellere dayanan, klinik doğruluğu yüksek ve hasta memnuniyetini destekleyen çözümler geliştirmek.",
+    "visionTitle": "Vizyonumuz",
+    "visionText": "Alanında; yenilikçi yaklaşımı, prestijli marka duruşu ve klinik başarı odaklı ürünleriyle ulusal ve uluslararası ölçekte referans alınan bir marka olmak.",
+    "aboutImageAlt": "Gloseria kurumsal etkinlik",
+    "splitParagraph": "Gloseria, dermo-kozmetik alanında kaliteyi yalnızca formülasyonla sınırlamayan; üretim süreçlerinden klinik geri bildirimlere kadar tüm aşamalarda yüksek standartları benimseyen bir markadır. Ürün geliştirme yaklaşımımız; etkinlik, güvenlik ve profesyonel kullanım gereksinimlerini aynı noktada buluşturmayı hedefler.",
+    "valuesHeading": "Değerlerimiz",
+    "values": [
+      {
+        "title": "Bilimsel Güvenilirlik",
+        "text": "Tüm ürünlerimiz, güncel bilimsel veriler ve klinik geri bildirimler doğrultusunda geliştirilir."
+      },
+      {
+        "title": "Profesyonel Odaklılık",
+        "text": "Gloseria, yalnızca profesyonel kullanım gereksinimlerine uygun çözümler sunar."
+      },
+      {
+        "title": "Yüksek Etkinlik",
+        "text": "Formülasyonlarımız, hedefe yönelik aktif içerikler ile maksimum klinik performans sağlayacak şekilde tasarlanır."
+      },
+      {
+        "title": "Sürekli Gelişim",
+        "text": "Ürün portföyümüz, dermatoloji ve medikal estetik alanındaki yenilikler doğrultusunda sürekli güncellenir."
+      },
+      {
+        "title": "Eğitim ve Paylaşım",
+        "text": "Uygulamalı workshoplar ve klinik buluşmalarla bilgi paylaşımını ve profesyonel gelişimi destekleriz."
+      }
+    ],
+    "closingParagraph": "Bu bütüncül bakış açısı, Gloseria’yı klinik uygulamalarda sürdürülebilir ve güvenilir bir çözüm ortağı haline getirir.",
+    "workshop": {
+      "aria": "Workshop",
+      "title": "Profesyonel Deneyimin Bir Parçası",
+      "text": "Gloseria, farklı şehirlerde düzenlediği uygulamalı workshoplar ile klinik bilgi ve deneyimi bir araya getirir. Bu organizasyonlar, hekimlerin uygulama yetkinliğini artırmak ve klinik standartları yükseltmek amacıyla tasarlanır.",
+      "cta": "WORKSHOP’LARI KEŞFET"
+    },
+    "futureHeading": "Geleceğe Bakış",
+    "futureLead": "Gloseria, medikal estetik alanında kalite, güven ve prestiji bir araya getirerek; bilimle güçlenen çözümler sunmaya devam eder."
+  },
+  "productPage": {
+    "notFoundHero": "Ürün bulunamadı",
+    "notFoundTitle": "Ürün bulunamadı",
+    "notFoundText": "Bu ürün sayfası henüz eklenmemiş olabilir.",
+    "statsAria": "Ürün detayları",
+    "formAria": "Form",
+    "imagePlaceholder": "Ürün görseli"
   },
   "contactPage": {
     "heading": "Bize Ulaşın",

@@ -17,22 +17,23 @@ export const categoryCards = [
   {
     id: 'skin' as const,
     image: '/images/gloseria-skin-series.png',
+    productSlug: 'blue-shine' as const,
   },
   {
     id: 'volumegen' as const,
     image: '/images/gloseria-voluregen-series.png',
+    productSlug: 'voluregen-hydrocalcium' as const,
   },
   {
     id: 'genital' as const,
     image: '/images/gloseria-genital-series.png',
+    productSlug: 'g-white' as const,
   },
 ] as const
 
 export const eventImages = {
-  national:
-    'https://z-cdn-media.chatglm.cn/files/57ffc087-ad88-40d9-bedd-00feb141f150.png?auth_key=1875246085-4c7799396e0041e7a20f119f84df5a8f-0-cab552c585d68eba2c814eadf958ba3d',
-  international:
-    'https://z-cdn-media.chatglm.cn/files/57ffc087-ad88-40d9-bedd-00feb141f150.png?auth_key=1875246085-4c7799396e0041e7a20f119f84df5a8f-0-cab552c585d68eba2c814eadf958ba3d',
+  national: '/images/blog1.webp',
+  international: '/images/blog2.webp',
 } as const
 
 export const footerProducts = [

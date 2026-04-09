@@ -1,5 +1,5 @@
 import { useMemo, type ReactElement } from 'react'
-import { useParams } from '@tanstack/react-router'
+import { Link, useParams } from '@tanstack/react-router'
 import { useTranslation } from 'react-i18next'
 import { InnerHero } from '../components/InnerHero'
 import { products } from '../products/catalog'
@@ -49,7 +49,7 @@ function StatIcon({ type }: { type: string }) {
 
 export function ProductPage() {
   const { slug } = useParams({ strict: false }) as { slug: string }
-  const { i18n } = useTranslation()
+  const { i18n, t } = useTranslation()
 
   const product = useMemo(() => products[slug], [slug])
   const lang = i18n.language?.toLowerCase().startsWith('en') ? 'en' : 'tr'
@@ -59,11 +59,11 @@ export function ProductPage() {
   if (!product) {
     return (
       <main>
-        <InnerHero title="Ürün bulunamadı" />
+        <InnerHero title={t('productPage.notFoundHero')} />
         <section className="product">
           <div className="product__container">
-            <h2 className="product__title">Ürün bulunamadı</h2>
-            <p className="product__text">Bu ürün sayfası henüz eklenmemiş olabilir.</p>
+            <h2 className="product__title">{t('productPage.notFoundTitle')}</h2>
+            <p className="product__text">{t('productPage.notFoundText')}</p>
           </div>
         </section>
       </main>
@@ -93,13 +93,13 @@ export function ProductPage() {
                 {product.imageSrc ? (
                   <img className="product__image" src={product.imageSrc} alt="" loading="lazy" />
                 ) : (
-                  <div className="product__imagePlaceholder">Ürün görseli</div>
+                  <div className="product__imagePlaceholder">{t('productPage.imagePlaceholder')}</div>
                 )}
               </div>
             </div>
           </div>
 
-          <div className="product__stats product__stats--wide" role="list" aria-label="Ürün detayları">
+          <div className="product__stats product__stats--wide" role="list" aria-label={t('productPage.statsAria')}>
             {product.stats.map((stat) => (
               <div key={stat.label} className="product__stat" role="listitem">
                 <div className="product__statIcon" aria-hidden="true">
@@ -114,7 +114,7 @@ export function ProductPage() {
           </div>
 
           {product.formCard ? (
-            <section className="product__formCard product__formCard--wide" aria-label="Form">
+            <section className="product__formCard product__formCard--wide" aria-label={t('productPage.formAria')}>
               <div className="product__formCardInner">
                 <div className="product__formCardLeft">
                   <div className="product__formCardKicker">
@@ -131,9 +131,9 @@ export function ProductPage() {
                   <div className="product__formCardRightText">
                     {lang === 'en' ? formCardI18n?.rightSubtitle ?? product.formCard.rightSubtitle : product.formCard.rightSubtitle}
                   </div>
-                  <a className="product__formCardCta" href={product.formCard.ctaHref}>
+                  <Link className="product__formCardCta" to={product.formCard.ctaHref}>
                     {lang === 'en' ? formCardI18n?.ctaLabel ?? product.formCard.ctaLabel : product.formCard.ctaLabel}
-                  </a>
+                  </Link>
                 </div>
               </div>
             </section>
