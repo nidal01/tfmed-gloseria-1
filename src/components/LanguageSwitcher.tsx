@@ -31,7 +31,7 @@ function resolveLang(code: string): SiteLanguage {
   if (c.startsWith('es')) return 'es'
   if (c.startsWith('ru')) return 'ru'
   if (c.startsWith('az')) return 'az'
-  return 'tr'
+  return 'en'
 }
 
 export function LanguageSwitcher() {

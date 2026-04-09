@@ -24,17 +24,7 @@ function storedOrBrowserLanguage(): SiteLanguage {
   } catch {
     /* private mode / SSR */
   }
-  if (typeof navigator !== 'undefined') {
-    const nav = navigator.language.toLowerCase()
-    if (nav.startsWith('tr')) return 'tr'
-    if (nav.startsWith('en')) return 'en'
-    if (nav.startsWith('de')) return 'de'
-    if (nav.startsWith('pt')) return 'pt'
-    if (nav.startsWith('es')) return 'es'
-    if (nav.startsWith('ru')) return 'ru'
-    if (nav.startsWith('az')) return 'az'
-  }
-  return 'tr'
+  return 'en'
 }
 
 const HTML_LANG: Record<SiteLanguage, string> = {
@@ -48,7 +38,7 @@ const HTML_LANG: Record<SiteLanguage, string> = {
 }
 
 function syncDocument(lang: string) {
-  const code = isSiteLanguage(lang) ? lang : 'tr'
+  const code = isSiteLanguage(lang) ? lang : 'en'
   document.documentElement.lang = HTML_LANG[code]
   document.title = i18n.t('meta.title')
 }
