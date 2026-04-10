@@ -65,7 +65,7 @@ export function GlobalVideoLoaderOverlay({ showDelayMs = 200, maxWaitMs = 10_000
     <div className={className} aria-hidden={isVisible ? undefined : true}>
       <div className="global-video-loader__panel" role="status" aria-live="polite">
         <div className="global-video-loader__spinner" aria-hidden="true" />
-        <div className="global-video-loader__text">Yükleniyor…</div>
+        <div className="global-video-loader__text">Loading…</div>
       </div>
     </div>
   )

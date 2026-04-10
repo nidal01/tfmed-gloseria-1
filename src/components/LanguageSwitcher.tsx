@@ -13,8 +13,8 @@ const CURRENT_LABEL_KEY: Record<SiteLanguage, string> = {
 }
 
 const LANG_OPTIONS: { code: SiteLanguage; labelKey: string }[] = [
-  { code: 'tr', labelKey: 'lang.tr' },
   { code: 'en', labelKey: 'lang.en' },
+  { code: 'tr', labelKey: 'lang.tr' },
   { code: 'de', labelKey: 'lang.de' },
   { code: 'pt', labelKey: 'lang.pt' },
   { code: 'es', labelKey: 'lang.es' },

@@ -10,7 +10,7 @@ import tr from '../locales/tr.json'
 
 export const LANGUAGE_STORAGE_KEY = 'site-language'
 
-export const SITE_LANGUAGES = ['tr', 'en', 'de', 'pt', 'es', 'ru', 'az'] as const
+export const SITE_LANGUAGES = ['en', 'tr', 'de', 'pt', 'es', 'ru', 'az'] as const
 export type SiteLanguage = (typeof SITE_LANGUAGES)[number]
 
 function isSiteLanguage(value: string): value is SiteLanguage {
